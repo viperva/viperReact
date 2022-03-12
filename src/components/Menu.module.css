@@ -1,0 +1,64 @@
+@font-face {
+    font-family: viper-font;
+    src: url(../Myfont2.ttf);
+  }
+  html{
+    overflow: hidden;
+  }
+
+.menuRow{
+    background-color: rgba(0, 0, 0, 0.6);
+    left: -100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    position: absolute;
+    width: 100%;
+    margin-top: 17%;
+    box-shadow: 0 30px 10px -10px rgba(0, 0, 0, 0.6), 0 -30px 10px -10px rgba(0, 0, 0, 0.6);
+    height: 55%;
+    transition: left 3s ease;
+    /* border: 5px solid red; */
+}
+
+.container{
+    /* border: 5px solid rgb(55, 0, 255); */
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+.menuItem{
+    width: 15%;
+    padding-top: 1.8%;
+    transition: 0.05s linear;
+    /* border: 5px solid blue; */
+}
+
+.menuItem:hover{
+    width: 22%;
+    cursor: pointer;
+    /* animation: expand 1s linear; */
+}
+
+.menuItemPhoto{
+    width: 100%;
+}
+
+.menuItemTitle{
+    /* border: 5px solid green; */
+    font-size: 1.8em;
+    font-family: viper-font;
+    text-align: center;
+    color: rgb(218, 171, 19);
+}
+
+@keyframes expand{
+    from{
+        width: 15%;
+    }
+    to{
+        width: 25%;
+    }
+}

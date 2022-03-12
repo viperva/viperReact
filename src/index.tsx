@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Background from './components/Background'
+import Menu from './components/Menu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Background />
+    <Menu/>
   </React.StrictMode>,
   document.getElementById('root')
 );

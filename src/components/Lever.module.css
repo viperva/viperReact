@@ -1,0 +1,13 @@
+.lever{
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    width: 15em;
+    height: 15em;
+    /* background-image: url(../images/leverUp.png); */
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center;
+    cursor: grab;
+    /* border: 5px solid blue; */
+}
