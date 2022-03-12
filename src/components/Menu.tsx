@@ -42,10 +42,10 @@ const Menu = () =>{
         <React.Fragment>
         <Lever onClick = {toggleLever} lever = {leverImage}/>
 
-        {!lever && (dynamicClass=-101)}
+        {!lever && (dynamicClass=-100)}
         {!lever && (dynamicClass2=0)}
         {lever && (dynamicClass=0)}
-        {lever && (dynamicClass2=101)}
+        {lever && (dynamicClass2=100)}
 
         <div className={styles.container}>
         <div className={styles.menuRow} style={{left: dynamicClass +'%'}}>
