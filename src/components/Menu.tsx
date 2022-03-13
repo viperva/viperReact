@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import styles from './Menu.module.css'
 import Lever from './Lever'
+import MenuItem from './MenuItem'
 
 import storePhoto from '../images2/storePhoto.png'
 // import storePhotoGif from '../images2/storePhoto.gif'
@@ -14,8 +15,21 @@ import aboutPhoto from '../images2/aboutPhoto.png'
 import contactPhoto from '../images2/contactPhoto.png'
 // import contactPhotoGif from '../images2/contactPhotoGif.gif'
 
-import leverUp from '../images/leverUp.png';
-import leverDown from '../images/leverDown.png';
+import blogPhoto from '../images2/blogPhoto.png'
+// import storePhotoGif from '../images2/storePhoto.gif'
+
+import playgroundPhoto from '../images2/playgroundPhoto.png'
+// import portfolioPhotoGif from '../images2/portfolioPhoto.gif'
+
+import galleryPhoto from '../images2/galleryPhoto.png'
+// import aboutPhotoGif from '../images2/aboutPhotoGif.gif'
+
+import Photo from '../images2/Photo.png'
+// import contactPhotoGif from '../images2/contactPhotoGif.gif'
+
+import leverUp from '../images2/leverUp.png';
+import leverDown from '../images2/leverDown.png';
+import toBeReplaced from '../images2/toBeReplaced.png'
 
 const Menu = () =>{
 
@@ -47,55 +61,32 @@ const Menu = () =>{
         {lever && (dynamicClass=0)}
         {lever && (dynamicClass2=100)}
 
-        <div className={styles.container}>
+
         <div className={styles.menuRow} style={{left: dynamicClass +'%'}}>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto}src={storePhoto} />
-                <h1 className={styles.menuItemTitle}>STORE</h1>
-            </div>
+            <MenuItem photo={toBeReplaced} title='STORE'></MenuItem>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={portfolioPhoto} />
-                <h1 className={styles.menuItemTitle}>PORTFOLIO</h1>
-            </div>
+            <MenuItem photo={toBeReplaced} title='BLOG'></MenuItem>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={aboutPhoto} />
-                <h1 className={styles.menuItemTitle}>ABOUT ME</h1>
-            </div>
+            <MenuItem photo={toBeReplaced} title='GALLERY'></MenuItem>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={contactPhoto} />
-                <h1 className={styles.menuItemTitle}>CONTACT</h1>
-            </div>
-        </div>
+            <MenuItem photo={toBeReplaced} title='PORTFOLIO'></MenuItem>
+
         </div>
 
-        <div className={styles.container}>
+
         <div className={styles.menuRow} style={{left: dynamicClass2 +'%'}}>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto}src={storePhoto} />
-                <h1 className={styles.menuItemTitle}>STORE</h1>
-            </div>
+            <MenuItem photo={aboutPhoto} title='ABOUT ME'></MenuItem>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={portfolioPhoto} />
-                <h1 className={styles.menuItemTitle}>PORTFOLIO</h1>
-            </div>
+            <MenuItem photo={contactPhoto} title='CONTACT'></MenuItem>
+                    
+            <MenuItem photo={toBeReplaced} title='PLAYGROUND'></MenuItem>
+                    
+            <MenuItem photo={toBeReplaced} title='DONT CLICK!'></MenuItem>
 
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={aboutPhoto} />
-                <h1 className={styles.menuItemTitle}>ABOUT ME</h1>
-            </div>
-
-            <div className={styles.menuItem}>
-                <img className={styles.menuItemPhoto} src={contactPhoto} />
-                <h1 className={styles.menuItemTitle}>CONTACT</h1>
-            </div>
         </div>
-        </div>
+
         </React.Fragment>
     );
 

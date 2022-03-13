@@ -1,0 +1,36 @@
+.menuItem{
+    width: 15%;
+    padding-top: 1.8%;
+    transition: 0.05s linear;
+    /* border: 5px solid blue; */
+}
+
+.menuItem:hover{
+    /* width: 22%; */
+    flex-grow: 0.7;
+    cursor: pointer;
+    /* border: 5px solid blue; */
+    /* animation: expand 1s linear; */
+}
+
+.menuItemPhoto{
+    width: 100%;
+    /* box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3); */
+}
+
+.menuItemTitle{
+    /* border: 5px solid green; */
+    font-size: 4vh;
+    font-family: viper-font;
+    text-align: center;
+    color: rgb(218, 171, 19);
+}
+
+@keyframes expand{
+    from{
+        width: 15%;
+    }
+    to{
+        width: 25%;
+    }
+}

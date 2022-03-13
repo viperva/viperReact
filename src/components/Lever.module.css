@@ -1,9 +1,9 @@
 .lever{
     position: absolute;
-    left: 30px;
-    top: 80px;
-    width: 15em;
-    height: 15em;
+    left: 2vw;
+    top: 6vh;
+    width: 12vw;
+    height: 12vw;
     /* background-image: url(../images/leverUp.png); */
     transform: rotateY(180deg);
     background-size: cover;

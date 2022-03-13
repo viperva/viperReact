@@ -1,5 +1,5 @@
 .background{
-    background-image: url('../images/tlo5.jpg');
+    background-image: url('../images2/tlo5.jpg');
     background-size: 400px;
     background-repeat: repeat;
     position: absolute;
@@ -8,7 +8,7 @@
 }
 
 .title{
-    width: 40%;
+    height: 30%;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
@@ -26,4 +26,13 @@
     to{
         filter: hue-rotate(360deg);
     }
+}
+
+.footer{
+    position: absolute;
+    color: rgba(240, 248, 255, 0.3);
+    font-size: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
 }

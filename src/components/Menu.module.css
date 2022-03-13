@@ -20,7 +20,7 @@
     box-shadow: inset 0 20px 10px -10px rgba(0, 0, 0, 0.6),
         inset 0 -20px 10px -10px rgba(0, 0, 0, 0.6);
     height: 55%;
-    transition: left 3s ease;
+    transition: left 0.7s ease;
     /* border: 5px solid red; */
 }
 
@@ -28,38 +28,4 @@
     /* border: 5px solid rgb(55, 0, 255); */
     /* width: 100%; */
     /* overflow: hidden; */
-}
-
-.menuItem{
-    width: 15%;
-    padding-top: 1.8%;
-    transition: 0.05s linear;
-    /* border: 5px solid blue; */
-}
-
-.menuItem:hover{
-    width: 22%;
-    cursor: pointer;
-    /* animation: expand 1s linear; */
-}
-
-.menuItemPhoto{
-    width: 100%;
-}
-
-.menuItemTitle{
-    /* border: 5px solid green; */
-    font-size: 1.8em;
-    font-family: viper-font;
-    text-align: center;
-    color: rgb(218, 171, 19);
-}
-
-@keyframes expand{
-    from{
-        width: 15%;
-    }
-    to{
-        width: 25%;
-    }
 }
