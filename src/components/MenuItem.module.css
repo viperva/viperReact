@@ -7,7 +7,7 @@
 
 .menuItem:hover{
     /* width: 22%; */
-    flex-grow: 0.7;
+    flex-grow: 0.65;
     cursor: pointer;
     /* border: 5px solid blue; */
     /* animation: expand 1s linear; */
@@ -24,6 +24,7 @@
     font-family: viper-font;
     text-align: center;
     color: rgb(218, 171, 19);
+    white-space: nowrap;
 }
 
 @keyframes expand{

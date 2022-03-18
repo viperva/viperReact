@@ -27,39 +27,31 @@ import galleryPhoto from '../images2/galleryPhoto.png'
 import Photo from '../images2/Photo.png'
 // import contactPhotoGif from '../images2/contactPhotoGif.gif'
 
-import leverUp from '../images2/leverUp.png';
-import leverDown from '../images2/leverDown.png';
+
 import toBeReplaced from '../images2/toBeReplaced.png'
 
 const Menu = () =>{
 
     const [lever, setLever] = useState(true);
 
-    const [leverImage, setLeverImage] = useState(leverDown);
-
     let dynamicClass = -100;
     let dynamicClass2 = 0;
 
     const toggleLever = () =>{
         setLever(!lever);
+        console.log("changing lever state to: " + lever)
     }
 
-    useEffect(() => {
-        if(lever){
-            setLeverImage(leverUp);
-        }else{
-            setLeverImage(leverDown);
-        }
-    }, [lever]);
+    !lever && (dynamicClass=-100);
+    !lever && (dynamicClass2=0);
+    lever && (dynamicClass=0);
+    lever && (dynamicClass2=100);
 
     return(
         <React.Fragment>
-        <Lever onClick = {toggleLever} lever = {leverImage}/>
+        <Lever onClick = {toggleLever} isLeverUp = {lever}/>
 
-        {!lever && (dynamicClass=-100)}
-        {!lever && (dynamicClass2=0)}
-        {lever && (dynamicClass=0)}
-        {lever && (dynamicClass2=100)}
+        
 
 
         <div className={styles.menuRow} style={{left: dynamicClass +'%'}}>
