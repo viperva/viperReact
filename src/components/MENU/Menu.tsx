@@ -1,18 +1,18 @@
 import React, {useState, useEffect} from "react";
 import styles from './Menu.module.css'
-import Lever from './Lever'
+import Lever from '../BUTTONS/Lever'
 import MenuItem from './MenuItem'
 
 import storePhoto from '../images2/storePhoto.png'
 // import storePhotoGif from '../images2/storePhoto.gif'
 
-import portfolioPhoto from '../images2/portfolioPhoto.png'
+import portfolioPhoto from '../../images2/portfolioPhoto.png'
 // import portfolioPhotoGif from '../images2/portfolioPhoto.gif'
 
-import aboutPhoto from '../images2/aboutPhoto.png'
+import aboutPhoto from '../../images2/aboutPhoto.png'
 // import aboutPhotoGif from '../images2/aboutPhotoGif.gif'
 
-import contactPhoto from '../images2/contactPhoto.png'
+import contactPhoto from '../../images2/contactPhoto.png'
 // import contactPhotoGif from '../images2/contactPhotoGif.gif'
 
 import blogPhoto from '../images2/blogPhoto.png'
@@ -26,9 +26,9 @@ import galleryPhoto from '../images2/galleryPhoto.png'
 
 import Photo from '../images2/Photo.png'
 // import contactPhotoGif from '../images2/contactPhotoGif.gif'
+//src/images2/._contactPhoto.png
 
-
-import toBeReplaced from '../images2/toBeReplaced.png'
+import toBeReplaced from '../../images2/toBeReplaced.png'
 
 const Menu = () =>{
 
@@ -51,9 +51,6 @@ const Menu = () =>{
         <React.Fragment>
         <Lever onClick = {toggleLever} isLeverUp = {lever}/>
 
-        
-
-
         <div className={styles.menuRow} style={{left: dynamicClass +'%'}}>
 
             <MenuItem photo={toBeReplaced} title='STORE'></MenuItem>
@@ -65,7 +62,6 @@ const Menu = () =>{
             <MenuItem photo={toBeReplaced} title='PORTFOLIO'></MenuItem>
 
         </div>
-
 
         <div className={styles.menuRow} style={{left: dynamicClass2 +'%'}}>
 
