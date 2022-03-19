@@ -2,6 +2,22 @@
     font-family: viper-font;
     src: url(../../Myfont2.ttf);
   } */
+
+.container{
+  align-items: flex-end;
+  bottom: 5vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  width: 100%;
+  gap: 5%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: visibility 0.7s, left 0.7s ease ;
+}
+
 .store{
     background-image: url('../../images2/tlo5.jpg');
     /* background-color: aquamarine; */
@@ -65,4 +81,74 @@
     border: none;
     background: none;
     cursor: pointer;
+    
+}
+.button:hover{
+    animation: hueRotate 0.5s linear infinite;
+}
+
+.next{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    cursor: pointer;
+    font-size: 100px;
+    border: none;
+    background: none;
+    color:rgb(218, 171, 19);
+    z-index: 11;
+
+}
+.previous{
+    position: absolute;
+    left: 90%;
+    transform: translate(-100%, 0);
+    top: 25%;
+    cursor: pointer;
+    font-size: 100px;
+    border: none;
+    background: none;
+    color:rgb(218, 171, 19);
+    z-index: 11;
+}
+.previous:hover{
+    animation: hueRotate 0.5s linear infinite;
+}
+.next:hover{
+    animation: hueRotate 0.5s linear infinite;
+}
+
+.title{
+    height: 100%;
+}
+
+.titleButton{
+    height: 20%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: wait;
+    background: none;
+    border: none;
+}
+
+.title:hover{
+    animation: hueRotate 0.5s linear infinite;
+}
+@keyframes hueRotate{
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.footer{
+    position: absolute;
+    color: rgba(240, 248, 255, 0.3);
+    font-size: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
 }
