@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import styles from './Menu.module.css'
 import Lever from '../BUTTONS/Lever'
 import MenuItem from './MenuItem'
+import Modules from '../MODULES/Modules';
 
 import storePhoto from '../images2/storePhoto.png'
 // import storePhotoGif from '../images2/storePhoto.gif'
@@ -34,16 +35,19 @@ const Menu = () =>{
 
     const [lever, setLever] = useState(true);
 
+    const [store, setStore] = useState(false);
+
     let dynamicClass = 'visible';
     let dynamicClass2 = 'hidden';
     let dynamicClass3 = '0';
     let dynamicClass4 = '100%';
 
-    const toggleLever = (event: any) =>{
+    const toggleLever = () =>{
         setLever(!lever);
-       //console.log("changing lever state to: " + lever);
-       //(event.style.display === "flex") && (event.style.display = "none");
-       //(event.style.display === "none") && (event.style.display = "flex");
+    }
+
+    const toggleStore = () =>{
+        setStore(!store);
     }
 
     !lever && (dynamicClass="hidden");
@@ -59,10 +63,12 @@ const Menu = () =>{
     return(
         <React.Fragment>
         <Lever onClick = {toggleLever} isLeverUp = {lever}/>
+
+        <Modules storeHandler={store}/>
         
         <div className={styles.menuRow} style={{visibility: lever ? "visible" : "hidden" , left: dynamicClass3}}>
 
-            <MenuItem photo={toBeReplaced} title='STORE'/>
+            <MenuItem photo={toBeReplaced} onClick={toggleStore} title='STORE'/>
 
             <MenuItem photo={toBeReplaced} title='BLOG'/>
 
