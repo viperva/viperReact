@@ -8,11 +8,17 @@
 }
 
 .title{
+    height: 100%;
+}
+
+.titleButton{
     height: 30%;
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
     cursor: wait;
+    background: none;
+    border: none;
 }
 
 .title:hover{

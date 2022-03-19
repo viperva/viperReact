@@ -6,7 +6,9 @@ const Background = () =>{
 
     return (
         <div className={styles.background}>
+            <button className={styles.titleButton}>
             <img className={styles.title} src={title} />
+            </button>
             <footer className={styles.footer}>Vipervalour&copy; 2022</footer>
         </div>
     );

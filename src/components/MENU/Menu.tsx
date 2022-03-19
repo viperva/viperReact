@@ -34,44 +34,53 @@ const Menu = () =>{
 
     const [lever, setLever] = useState(true);
 
-    let dynamicClass = -100;
-    let dynamicClass2 = 0;
+    let dynamicClass = 'visible';
+    let dynamicClass2 = 'hidden';
+    let dynamicClass3 = '0';
+    let dynamicClass4 = '100%';
 
-    const toggleLever = () =>{
+    const toggleLever = (event: any) =>{
         setLever(!lever);
-        console.log("changing lever state to: " + lever)
+       //console.log("changing lever state to: " + lever);
+       //(event.style.display === "flex") && (event.style.display = "none");
+       //(event.style.display === "none") && (event.style.display = "flex");
     }
 
-    !lever && (dynamicClass=-100);
-    !lever && (dynamicClass2=0);
-    lever && (dynamicClass=0);
-    lever && (dynamicClass2=100);
+    !lever && (dynamicClass="hidden");
+    !lever && (dynamicClass2='visible');
+    lever && (dynamicClass='visible');
+    lever && (dynamicClass2='hidden');
+
+    !lever && (dynamicClass3='-100%');
+    !lever && (dynamicClass4='0');
+    lever && (dynamicClass3='0');
+    lever && (dynamicClass4='100%');
 
     return(
         <React.Fragment>
         <Lever onClick = {toggleLever} isLeverUp = {lever}/>
+        
+        <div className={styles.menuRow} style={{visibility: lever ? "visible" : "hidden" , left: dynamicClass3}}>
 
-        <div className={styles.menuRow} style={{left: dynamicClass +'%'}}>
+            <MenuItem photo={toBeReplaced} title='STORE'/>
 
-            <MenuItem photo={toBeReplaced} title='STORE'></MenuItem>
+            <MenuItem photo={toBeReplaced} title='BLOG'/>
 
-            <MenuItem photo={toBeReplaced} title='BLOG'></MenuItem>
+            <MenuItem photo={toBeReplaced} title='GALLERY'/>
 
-            <MenuItem photo={toBeReplaced} title='GALLERY'></MenuItem>
-
-            <MenuItem photo={toBeReplaced} title='PORTFOLIO'></MenuItem>
+            <MenuItem photo={toBeReplaced} title='PORTFOLIO'/>
 
         </div>
+        
+        <div className={styles.menuRow} style={{visibility: lever ? "hidden" : "visible" , left: dynamicClass4}}>
 
-        <div className={styles.menuRow} style={{left: dynamicClass2 +'%'}}>
+            <MenuItem photo={aboutPhoto} title='ABOUT ME'/>
 
-            <MenuItem photo={aboutPhoto} title='ABOUT ME'></MenuItem>
-
-            <MenuItem photo={contactPhoto} title='CONTACT'></MenuItem>
+            <MenuItem photo={contactPhoto} title='CONTACT'/>
                     
-            <MenuItem photo={toBeReplaced} title='PLAYGROUND'></MenuItem>
+            <MenuItem photo={toBeReplaced} title='PLAYGROUND'/>
                     
-            <MenuItem photo={toBeReplaced} title='DONT CLICK!'></MenuItem>
+            <MenuItem photo={toBeReplaced} title='DONT CLICK!'/>
 
         </div>
 

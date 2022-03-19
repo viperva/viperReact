@@ -8,7 +8,8 @@
 
 .menuRow{
     background-color: rgba(0, 0, 0, 0.6);
-    left: -100%;
+    /* left: -100%; */
+    /* visibility: hidden; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,12 +21,15 @@
     box-shadow: inset 0 20px 10px -10px rgba(0, 0, 0, 0.6),
         inset 0 -20px 10px -10px rgba(0, 0, 0, 0.6);
     height: 55%;
-    transition: left 0.7s ease;
+    transition: visibility 0.7s, left 0.7s ease ;
+    /* overflow: unset; */
     /* border: 5px solid red; */
 }
+
 
 .container{
     /* border: 5px solid rgb(55, 0, 255); */
     /* width: 100%; */
     /* overflow: hidden; */
+    
 }

@@ -1,11 +1,5 @@
 .button{
-   position: absolute;
-   left: 2vw;
-   top: 6vh;
-   width: 12vw;
-   height: 12vw;
    background: none;
    border: none;
    cursor: grab;
-    
 }

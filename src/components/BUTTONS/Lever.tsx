@@ -3,7 +3,6 @@ import styles from './Lever.module.css';
 
 import leverUp from '../../images2/leverUp.png';
 import leverDown from '../../images2/leverDown.png';
-import Button from './Button';
 
 const Lever = (props: any) =>{
     // console.log('url(' + (props.leverImage) + ')');
@@ -13,12 +12,12 @@ const Lever = (props: any) =>{
     //console.log("lever state insinde lever component: "+ props.isLeverUp);
 
     return(
-        <Button onClick={props.onClick}>
+        <button className={styles.leverButton} onClick={props.onClick}>
             <img
                 src={props.isLeverUp ? leverUp : leverDown} 
                 className={styles.lever}
             />
-        </Button>
+        </button>
     );
 
 }
