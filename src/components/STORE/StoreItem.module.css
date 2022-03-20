@@ -8,14 +8,6 @@
     /* border: 1px solid rgb(94, 255, 0); */
 }
 
-.wrapper{
-
-    border: 1px solid rgb(94, 255, 0);
-    display: flex;
-    justify-content: center;
-    /* overflow: hidden; */
-}
-
 .itemPhotoMain{
     /* aspect-ratio: 1 / 1; */
     /* width:20%; */
@@ -40,7 +32,7 @@
     font-size: 55px;
     /* border: 1px solid blue; */
     font-family: viper-font;
-    color: rgb(218, 171, 19);
+    color: goldenrod;
 }
 
 .title:hover{

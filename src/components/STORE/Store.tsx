@@ -48,6 +48,7 @@ const Store = (props: any) =>{
         appearActive: styles.storeAppearActive
         }}>
             <div className={styles.store}>
+                <div className={styles.backdrop}></div>
                 <button onClick={toggleStore} className={styles.titleButton}>
                     <img className={styles.title} src={title} />
                 </button>
