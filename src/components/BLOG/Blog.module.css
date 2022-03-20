@@ -1,3 +1,19 @@
+
+.book{
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, 60%);
+    /* border: 2px solid white; */
+    bottom: 50%;
+    width: 80vw;
+    height:auto;
+    background-image: url('../../images2/book.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .blog{
     position: absolute;
     width: 100%;
@@ -72,6 +88,8 @@
     opacity: 0;
 }
 
+
+
 @keyframes bounce-in {
     0%{bottom : 100vh}
     40%{bottom : 0}
@@ -142,4 +160,36 @@
     left: 50%;
     transform: translate(-50%, 0);
     bottom: 10px;
+}
+
+.next{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 100px;
+    border: none;
+    background: none;
+    color:goldenrod;
+    z-index: 11;
+
+}
+.previous{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 100px;
+    border: none;
+    background: none;
+    color:goldenrod;
+    z-index: 11;
+}
+.previous:hover{
+    animation: hueRotate 0.5s linear infinite;
+}
+.next:hover{
+    animation: hueRotate 0.5s linear infinite;
 }

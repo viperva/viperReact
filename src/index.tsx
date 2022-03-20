@@ -6,10 +6,10 @@ import Background from './components/BACKGROUND/Background'
 import Menu from './components/MENU/Menu';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Background />
     <Menu/>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

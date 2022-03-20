@@ -1,0 +1,47 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    padding: 8%;
+    gap: 10%;
+    /* border: 1px solid red; */
+}
+
+.left{
+    width: 50%;
+    opacity: 90%;
+    filter: blur(0.5px);
+    /* border: 1px solid red; */
+}
+
+.right{
+    width: 50%;
+    opacity: 85%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.title{
+    font-family: viper-font;
+    font-size: 50px;
+}
+
+.text{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.image{
+    width: 100%;
+}
+
+.button{
+    font-size: 60px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: inline-end;
+}
+.button:hover{
+    cursor: pointer;
+}

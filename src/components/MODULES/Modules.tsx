@@ -7,8 +7,8 @@ const Modules = (props: any) =>{
 
     return(
         <>
-        <Store storeHandler={props.storeHandler}/>
-        <Blog blogHandler={props.blogHandler}/>
+        <Store storeHandler={props.storeHandler} toggleStore={props.toggleStore}/>
+        <Blog blogHandler={props.blogHandler} toggleBlog={props.toggleBlog}/>
         </>
     );
 

@@ -11,8 +11,6 @@ const Store = (props: any) =>{
 
     const [left, setLeft] = useState(0);
 
-    const [store, setStore] = useState(props.storeHandler);
-
     const increaseLeft = () =>{
         setLeft(prevLeft => prevLeft+100);
         console.log(left);
@@ -23,17 +21,9 @@ const Store = (props: any) =>{
         console.log(left);
     }
 
-    const toggleStore = () =>{
-        setStore(!store);
-    }
-    useEffect(() => {
-        toggleStore();
-        console.log("echo")
-    }, [props.storeHandler])
-
     return(
         <CSSTransition
-        in={store}
+        in={props.storeHandler}
         mountOnEnter={true}
         unmountOnExit={true}
         timeout={1000}
@@ -49,12 +39,12 @@ const Store = (props: any) =>{
         }}>
             <div className={styles.store}>
                 <div className={styles.backdrop}></div>
-                <button onClick={toggleStore} className={styles.titleButton}>
+                <button onClick={props.toggleStore} className={styles.titleButton}>
                     <img className={styles.title} src={title} />
                 </button>
                 <button onClick={increaseLeft} className={styles.next}> &#8592; </button>
                 <button onClick={decreaseLeft} className={styles.previous}> &#8594; </button>
-                <button className={styles.button} onClick={toggleStore}>X</button>
+                <button className={styles.button} onClick={props.toggleStore}>X</button>
                 
 
                 <div className={styles.container} style={{left: left + 'vw'}}>
