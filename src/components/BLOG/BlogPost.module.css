@@ -3,6 +3,7 @@
     flex-direction: row;
     padding: 8%;
     gap: 10%;
+    align-items: center;
     /* border: 1px solid red; */
 }
 
@@ -15,20 +16,24 @@
 
 .right{
     width: 50%;
+    height: 50vh;
     opacity: 85%;
     text-align: center;
+    overflow: scroll;
     /* border: 1px solid red; */
 }
 
 .title{
     font-family: viper-font;
     font-size: 50px;
+    margin-top: -0.2vh;
 }
 
 .text{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
+    overflow: scroll;
 }
 
 .image{

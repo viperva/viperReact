@@ -25,7 +25,7 @@
 
 .backdrop{
     background-image: url('../../images2/tlo5.jpg');
-    background-size: 400px;
+    background-size: 50vh;
     background-repeat: repeat;
     position: absolute;
     width: 100%;
