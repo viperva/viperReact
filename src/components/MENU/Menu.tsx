@@ -37,6 +37,7 @@ const Menu = () =>{
 
     const [store, setStore] = useState(false);
     const [blog, setBlog] = useState(false);
+    const [gallery, setGallery] = useState(false);
 
     let dynamicClass = 'visible';
     let dynamicClass2 = 'hidden';
@@ -56,6 +57,11 @@ const Menu = () =>{
         console.log("toggleBlog")
     }
 
+    const toggleGallery = () =>{
+        setGallery(!gallery);
+    }
+
+
     !lever && (dynamicClass="hidden");
     !lever && (dynamicClass2='visible');
     lever && (dynamicClass='visible');
@@ -70,7 +76,7 @@ const Menu = () =>{
         <React.Fragment>
         <Lever onClick = {toggleLever} isLeverUp = {lever}/>
 
-        <Modules storeHandler={store} toggleStore={toggleStore} blogHandler={blog} toggleBlog={toggleBlog}/>
+        <Modules storeHandler={store} toggleStore={toggleStore} blogHandler={blog} toggleBlog={toggleBlog} galleryHandler={gallery} toggleGallery={toggleGallery}/>
         
         <div className={styles.menuRow} style={{visibility: lever ? "visible" : "hidden" , left: dynamicClass3}}>
 
@@ -78,7 +84,7 @@ const Menu = () =>{
 
             <MenuItem photo={toBeReplaced} onClick={toggleBlog} title='BLOG'/>
 
-            <MenuItem photo={toBeReplaced} title='GALLERY'/>
+            <MenuItem photo={toBeReplaced} onClick={toggleGallery} title='GALLERY'/>
 
             <MenuItem photo={toBeReplaced} title='PORTFOLIO'/>
 

@@ -26,7 +26,7 @@ const Store = (props: any) =>{
         in={props.storeHandler}
         mountOnEnter={true}
         unmountOnExit={true}
-        timeout={1000}
+        timeout={600}
         classNames={{
         enter: styles.storeEnter,
         enterActive: styles.storeEnterActive,

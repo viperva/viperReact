@@ -1,0 +1,57 @@
+.obraz{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    height: 60vh;
+    z-index: 2;
+}
+
+.lancuchUp{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 20vw;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    filter: brightness(70%);
+}
+
+.lancuchDown{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 20vw;
+    transform: translate(-50%, 0) scale(1, -1);
+    z-index: 1;
+    filter: brightness(70%);
+}
+
+.description{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 3vw;
+    bottom: 5vh;
+    width: 30vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 10%;
+}
+
+.title{
+    font-family: viper-font;
+    font-size: 40px;
+    text-align: center;
+    color: goldenrod;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    padding: 0 10% 0 10%;
+}
+
