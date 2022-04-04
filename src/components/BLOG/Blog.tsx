@@ -36,7 +36,7 @@ const Blog = (props: any) =>{
 
     const [postId, setPostId] = useState(0);
 
-    const [bookImage, setBookImage] = useState(book);
+    const [bookImage, setBookImage] = useState(bookFront);
 
     // useEffect(() => {
     //     if(postId == 0)setBookImage("url('../../images2/bookFront.png')")
