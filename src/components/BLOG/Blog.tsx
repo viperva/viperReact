@@ -4,8 +4,61 @@ import {CSSTransition} from 'react-transition-group';
 import title from '../../images2/tytul.gif'
 import BlogPost from './BlogPost';
 import art1img from '../../images2/viper2.png';
+import art2img from '../../images2/obraz1.png';
+import bookFront from '../../images2/bookFront.png';
+import book from '../../images2/book.png';
+import bookBack from '../../images2/bookBack.png';
 
 const Blog = (props: any) =>{
+
+    const posts = [
+        {
+            title : "",
+            text: "",
+            image: null
+        },
+        {
+            title : "TEST POST",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique bibendum massa sit amet euismod. Cras nec sapien gravida, bibendum nisl eget, sodales sem. Mauris nec interdum dolor. Donec ac rhoncus arcu. Sed ac varius tortor. Phasellus ornare sapien id libero rutrum, sed volutpat massa tristique. Integer gravida est sed sem sagittis, a faucibus lacus iaculis. Phasellus eros ante, ultrices id mi non, vehicula pulvinar ipsum. Nam quis dui non velit aliquam ornare. Nunc imperdiet egestas odio, sed malesuada tortor ullamcorper tempus. Aliquam mollis tellus nibh, eu elementum mauris malesuada id. ",
+            image: art1img
+        },
+        {
+            title : "TEST POST2",
+            text: "Donec ac rhoncus arcu. Sed ac varius tortor. Phasellus ornare sapien id libero rutrum, sed volutpat massa tristique. Integer gravida est sed sem sagittis, a faucibus lacus iaculis. Phasellus eros ante, ultrices id mi non, vehicula pulvinar ipsum. Nam quis dui non velit aliquam ornare. Nunc imperdiet egestas odio, sed malesuada tortor ullamcorper tempus. Aliquam mollis tellus nibh, eu elementum mauris malesuada id. ",
+            image: art2img
+        },
+        {
+            title : "",
+            text: "",
+            image: null
+        }
+    ]; 
+
+    const [postId, setPostId] = useState(0);
+
+    const [bookImage, setBookImage] = useState(book);
+
+    // useEffect(() => {
+    //     if(postId == 0)setBookImage("url('../../images2/bookFront.png')")
+    //     if(postId == )
+    // })
+
+    const nextPost = () =>{
+        // console.log(postId);
+        if(postId<posts.length-1){
+            setPostId(prevPostId => prevPostId+1);
+            setBookImage(book);
+            if(postId == posts.length-2)setBookImage(bookBack);
+        }
+    }
+
+    const prevPost = () =>{
+        if(postId>0){
+            setPostId(prevPostId => prevPostId-1);
+            setBookImage(book);
+            if(postId == 1)setBookImage(bookFront);
+        }
+    }
 
     return(
         <CSSTransition
@@ -30,14 +83,16 @@ const Blog = (props: any) =>{
                 </button>
 
                 <button className={styles.button} onClick={props.toggleBlog}>X</button>
-                <button className={styles.next}> &#8592; </button>
-                <button className={styles.previous}> &#8594; </button>
+                <button className={styles.next} onClick={prevPost} > &#8592; </button>
+                <button className={styles.previous} onClick={nextPost} > &#8594; </button>
+
+                <img className={styles.book} src={bookImage}/>
                 
-                <div className={styles.book}>
+                <div className={styles.post}>
                     <BlogPost
-                        title={"TEST POST"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique bibendum massa sit amet euismod. Cras nec sapien gravida, bibendum nisl eget, sodales sem. Mauris nec interdum dolor. Donec ac rhoncus arcu. Sed ac varius tortor. Phasellus ornare sapien id libero rutrum, sed volutpat massa tristique. Integer gravida est sed sem sagittis, a faucibus lacus iaculis. Phasellus eros ante, ultrices id mi non, vehicula pulvinar ipsum. Nam quis dui non velit aliquam ornare. Nunc imperdiet egestas odio, sed malesuada tortor ullamcorper tempus. Aliquam mollis tellus nibh, eu elementum mauris malesuada id. "}
-                        image={art1img}
+                        title={posts[postId].title}
+                        text={posts[postId].text}
+                        image={posts[postId].image}
                     />
                 </div>
 

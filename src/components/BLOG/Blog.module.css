@@ -1,5 +1,5 @@
 
-.book{
+.post{
     position: absolute;
     left: 50%;
     overflow: hidden;
@@ -8,10 +8,17 @@
     bottom: 50%;
     width: 80vw;
     height:auto;
-    background-image: url('../../images2/book.png');
+    /* background-image: url('../../images2/book.png'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.book{
+    position: absolute;
+    height: 85vh;
+    left: 50%;
+    transform: translate(-50%, 18%);
 }
 
 .blog{
