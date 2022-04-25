@@ -30,7 +30,7 @@ const Store = (props: any) =>{
             img3 : ben3
         },
 
-    ]; 
+    ];
 
     const [left, setLeft] = useState(0);
 
