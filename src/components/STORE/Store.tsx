@@ -9,16 +9,41 @@ import StoreItem from './StoreItem'
 
 const Store = (props: any) =>{
 
+    const items: {[index: string]:any} = [
+
+        {
+            title : "benio hoodie",
+            img1 : ben1,
+            img2 : ben2,
+            img3 : ben3
+        },
+        {
+            title : "TEST POST",
+            img1 : ben1,
+            img2 : ben2,
+            img3 : ben3
+        },
+        {
+            title : "TEST POST",
+            img1 : ben1,
+            img2 : ben2,
+            img3 : ben3
+        },
+
+    ]; 
+
     const [left, setLeft] = useState(0);
 
     const increaseLeft = () =>{
-        setLeft(prevLeft => prevLeft+100);
-        console.log(left);
+        if(left != 0){
+            setLeft(prevLeft => prevLeft+100);
+        }
     }
 
     const decreaseLeft = () =>{
-        setLeft(prevLeft => prevLeft-100);
-        console.log(left);
+        if(left != (items.length-1)*(-100)){
+            setLeft(prevLeft => prevLeft-100);
+        }
     }
 
     return(
@@ -26,6 +51,7 @@ const Store = (props: any) =>{
         in={props.storeHandler}
         mountOnEnter={true}
         unmountOnExit={true}
+        onEnter={() => setLeft(0)}
         timeout={600}
         classNames={{
         enter: styles.storeEnter,
@@ -47,22 +73,17 @@ const Store = (props: any) =>{
                 <button className={styles.button} onClick={props.toggleStore}>X</button>
                 
 
-                <div className={styles.container} style={{left: left + 'vw'}}>
-                <StoreItem
-                img1={ben1} 
-                img2={ben2} 
-                img3={ben3} 
-                title="BENIO HOODIE"
-                />
-                </div>
-                <div className={styles.container} style={{left: left+100 + 'vw'}}>
-                <StoreItem
-                img1={ben1} 
-                img2={ben2} 
-                img3={ben3} 
-                title="BENIO HOODIE"
-                />
-                </div>
+                
+
+                {items.map((item :typeof items, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
+                img1={items[index].img1} 
+                img2={items[index].img2} 
+                img3={items[index].img3} 
+                title={items[index].title} 
+                /> </div>)}
+ 
+                
+                
                 <footer className={styles.footer}>Vipervalour&copy; 2022</footer>
             </div>
             
