@@ -1,12 +1,13 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 import styles from './BlogPost.module.css';
 
 const BlogPost = (props: any) =>{
 
     return(
-        <div className={styles.content}>
+        <>
+        {props.title != "" && <div className={styles.content}>
             <div className={styles.left}>
-                <img className={styles.image} src={props.image}/>
+            <img className={styles.image} src={props.image}/>
             </div>
             <div className={styles.right}>
                 <h1 className={styles.title}>{props.title}</h1>
@@ -15,6 +16,8 @@ const BlogPost = (props: any) =>{
                 </p>
             </div>
         </div>
+    }
+    </>
     );
 
 }

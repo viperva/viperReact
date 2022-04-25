@@ -4,10 +4,11 @@ import Lever from '../BUTTONS/Lever'
 import MenuItem from './MenuItem'
 import Modules from '../MODULES/Modules';
 
-import storePhoto from '../images2/storePhoto.png'
+import storePhoto from '../../images2/_store.png'
+
 // import storePhotoGif from '../images2/storePhoto.gif'
 
-import portfolioPhoto from '../../images2/portfolioPhoto.png'
+import portfolioPhoto from '../../images2/_portfolio.png'
 // import portfolioPhotoGif from '../images2/portfolioPhoto.gif'
 
 import aboutPhoto from '../../images2/aboutPhoto.png'
@@ -16,13 +17,13 @@ import aboutPhoto from '../../images2/aboutPhoto.png'
 import contactPhoto from '../../images2/contactPhoto.png'
 // import contactPhotoGif from '../images2/contactPhotoGif.gif'
 
-import blogPhoto from '../images2/blogPhoto.png'
+import blogPhoto from '../../images2/_blog.png'
 // import storePhotoGif from '../images2/storePhoto.gif'
 
 import playgroundPhoto from '../images2/playgroundPhoto.png'
 // import portfolioPhotoGif from '../images2/portfolioPhoto.gif'
 
-import galleryPhoto from '../images2/galleryPhoto.png'
+import galleryPhoto from '../../images2/_gallery.png'
 // import aboutPhotoGif from '../images2/aboutPhotoGif.gif'
 
 import Photo from '../images2/Photo.png'
@@ -80,13 +81,13 @@ const Menu = () =>{
         
         <div className={styles.menuRow} style={{visibility: lever ? "visible" : "hidden" , left: dynamicClass3}}>
 
-            <MenuItem photo={toBeReplaced} onClick={toggleStore} title='STORE'/>
+            <MenuItem photo={storePhoto} onClick={toggleStore} title='STORE'/>
 
-            <MenuItem photo={toBeReplaced} onClick={toggleBlog} title='BLOG'/>
+            <MenuItem photo={blogPhoto} onClick={toggleBlog} title='BLOG'/>
 
-            <MenuItem photo={toBeReplaced} onClick={toggleGallery} title='GALLERY'/>
+            <MenuItem photo={galleryPhoto} onClick={toggleGallery} title='GALLERY'/>
 
-            <MenuItem photo={toBeReplaced} title='PORTFOLIO'/>
+            <MenuItem photo={portfolioPhoto} title='PORTFOLIO'/>
 
         </div>
         

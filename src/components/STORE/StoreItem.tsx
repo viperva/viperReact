@@ -8,11 +8,19 @@ const StoreItem = (props: any) =>{
             <>
                 <h1 className={styles.title}>{props.title}</h1>
                 <div className={styles.itemRow}>
+
+                    <div className={styles.itemWrap}>
                     <img className={styles.itemPhoto} src={props.img1}/>
-                    {/* <div className={styles.wrapper}> */}
-                    <img className={styles.itemPhotoMain} src={props.img2} id="center"/>
-                    {/* </div> */}
+                    </div>
+
+                    <div className={styles.itemWrap}>
+                    <img className={styles.itemPhoto} src={props.img2} id="center"/>
+                    </div>
+
+                    <div className={styles.itemWrap}>
                     <img className={styles.itemPhoto} src={props.img3}/>
+                    </div>
+
                 </div>
             </>
     );

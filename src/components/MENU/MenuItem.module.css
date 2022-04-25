@@ -33,7 +33,7 @@
     /* width: 22%; */
     flex-grow: 0.65;
     cursor: pointer;
-    animation: hueRotate 0.5s linear infinite;
+    /* animation: hueRotate 0.5s linear infinite; */
     /* border: 5px solid blue; */
     /* animation: expand 1s linear; */
   }

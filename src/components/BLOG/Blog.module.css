@@ -85,7 +85,7 @@
 .blogExitActive{
     animation-name: rotate-out;
     animation-duration: 1.2s;
-    animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-timing-function: ease;
     bottom: -100vh;
     transition: bottom 0s linear;
     transition-delay: 1.2s;

@@ -8,21 +8,13 @@
     /* border: 1px solid rgb(94, 255, 0); */
 }
 
-.itemPhotoMain{
-    /* aspect-ratio: 1 / 1; */
-    /* width:20%; */
-    border-radius: 10%;
-  /* border: 5px solid blue; */
+.itemWrap{
+    /* border: 1px solid rgb(94, 255, 0); */
+    width: 27vw;
 }
 
-.itemPhotoMain:hover{
-    /* aspect-ratio: 1 / 1; */
-    /* background-color: rgba(255, 255, 255, 0.05); */
-    animation: hueRotate 0.5s linear infinite;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    
-  /* border: 5px solid blue; */
+.itemPhoto{
+    width: 100%;
 }
 
 .title{

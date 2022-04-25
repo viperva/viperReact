@@ -38,11 +38,6 @@ const Blog = (props: any) =>{
 
     const [bookImage, setBookImage] = useState(bookFront);
 
-    // useEffect(() => {
-    //     if(postId == 0)setBookImage("url('../../images2/bookFront.png')")
-    //     if(postId == )
-    // })
-
     const nextPost = () =>{
         // console.log(postId);
         if(postId<posts.length-1){
@@ -66,6 +61,8 @@ const Blog = (props: any) =>{
         mountOnEnter={true}
         unmountOnExit={false}
         timeout={1200}
+        onExited={() => setPostId(0)}
+        onEnter={() => setBookImage(bookFront)}
         classNames={{
         enter: styles.blogEnter,
         enterActive: styles.blogEnterActive,
