@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import styles from './BlogPost.module.css';
 
 const BlogPost = (props: any) =>{

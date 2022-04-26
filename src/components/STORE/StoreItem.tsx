@@ -1,6 +1,4 @@
-import {useState, useRef, useEffect} from 'react';
 import styles from './StoreItem.module.css';
-
 
 const StoreItem = (props: any) =>{
 
@@ -14,7 +12,7 @@ const StoreItem = (props: any) =>{
                     </div>
 
                     <div className={styles.itemWrap}>
-                    <img className={styles.itemPhoto} src={props.img2} id="center"/>
+                    <img className={styles.itemPhoto} src={props.img2}/>
                     </div>
 
                     <div className={styles.itemWrap}>

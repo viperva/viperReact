@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import styles from './GalleryItem.module.css';
 import chain from '../../images2/lancuch.png';
 

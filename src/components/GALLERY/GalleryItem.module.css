@@ -35,7 +35,6 @@
     bottom: 5vh;
     width: 30vw;
     height: 40vh;
-    /* border: 1px solid red; */
     background-color: rgba(0, 0, 0, 0.384);
     border-radius: 10%;
 }
@@ -60,4 +59,3 @@
 .text::-webkit-scrollbar { 
     display: none;
 }
-

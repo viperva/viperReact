@@ -4,8 +4,6 @@
     height: 100%;
     z-index: 10;
     overflow: hidden;
-    /* transform: rotate(5deg);
-    transform-origin: top left; */
 }
 
 .backdrop{
@@ -15,9 +13,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* filter: hue-rotate(216deg); */
     filter: grayscale(150%) brightness(50%);
-    /* filter: brightness(120%); */
 }
 
 .container{
@@ -95,9 +91,11 @@
     transform: rotate(0deg);
     transform-origin: left bottom;
 }
+
 .galleryExit{
     bottom: 0;
 }
+
 .galleryExitActive{
     animation-name: drop-down;
     animation-duration: 1s;
@@ -106,6 +104,7 @@
     transition: bottom 0s linear;
     transition-delay: 1s;
 }
+
 .galleryExitDone{
     bottom: -100vh;
     opacity: 0;
@@ -158,7 +157,6 @@
 
 @keyframes rotate-out {
     0%{
-        /* transform: rotate(0); */
         transform-origin: top left;
     }
     25%{
@@ -235,6 +233,7 @@
     z-index: 11;
 
 }
+
 .previous{
     position: absolute;
     right: 25vw;
@@ -247,9 +246,11 @@
     color:goldenrod;
     z-index: 11;
 }
+
 .previous:hover{
     animation: hueRotate 0.5s linear infinite;
 }
+
 .next:hover{
     animation: hueRotate 0.5s linear infinite;
 }

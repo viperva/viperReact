@@ -1,6 +1,4 @@
-import React, {useState} from "react";
 import styles from './MenuItem.module.css';
-
 
 const MenuItem = (props: any) =>{
 

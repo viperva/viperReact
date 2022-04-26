@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './Background.module.css'
 import title from '../../images2/tytul.gif'
 

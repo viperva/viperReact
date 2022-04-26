@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import styles from './Blog.module.css';
 import {CSSTransition} from 'react-transition-group';
 import title from '../../images2/tytul.gif'
@@ -39,7 +39,6 @@ const Blog = (props: any) =>{
     const [bookImage, setBookImage] = useState(bookFront);
 
     const nextPost = () =>{
-        // console.log(postId);
         if(postId<posts.length-1){
             setPostId(prevPostId => prevPostId+1);
             setBookImage(book);

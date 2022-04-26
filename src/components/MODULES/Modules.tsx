@@ -1,8 +1,7 @@
-import {useState} from 'react';
 import Store from '../STORE/Store';
 import Blog from '../BLOG/Blog';
 import Gallery from '../GALLERY/Gallery';
-import styles from './Modules.module.css';
+//import styles from './Modules.module.css';
 
 const Modules = (props: any) =>{
 

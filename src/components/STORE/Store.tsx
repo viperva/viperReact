@@ -72,17 +72,12 @@ const Store = (props: any) =>{
                 <button onClick={decreaseLeft} className={styles.previous}> &#8594; </button>
                 <button className={styles.button} onClick={props.toggleStore}>X</button>
                 
-
-                
-
                 {items.map((item :typeof items, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
                 img1={items[index].img1} 
                 img2={items[index].img2} 
                 img3={items[index].img3} 
                 title={items[index].title} 
-                /> </div>)}
- 
-                
+                /> </div>)}                
                 
                 <footer className={styles.footer}>Vipervalour&copy; 2022</footer>
             </div>

@@ -1,10 +1,9 @@
-import {useState, useEffect, KeyboardEvent} from 'react';
+import {useState} from 'react';
 import styles from './Gallery.module.css';
 import {CSSTransition} from 'react-transition-group';
 import title from '../../images2/tytul.gif'
 import light from '../../images2/reflektor.png';
 import GalleryItem from './GalleryItem';
-
 import obraz from '../../images2/obraz1.png';
 import obraz2 from '../../images2/obraz2.png';
 import madonna from '../../images2/madonna.png';
@@ -88,22 +87,6 @@ const Gallery = (props: any) =>{
 
                     <img className={styles.light1} src={light}/>
                     <img className={styles.light2} src={light}/>
-
-                    {/* <div className={styles.container} style={{bottom: bottom + 'vh'}}>
-                    <GalleryItem 
-                        obraz={obraz}
-                        title="TYTUL OBRAZU"
-                        desc="Donec lacus mi, vehicula sit amet semper sed, dictum a felis. Suspendisse auctor metus vel ultricies maximus. Vivamus dapibus vel quam molestie sodales. Nam eu mattis arcu. Nullam ac massa sed elit egestas ornare. Etiam et aliquet elit, sit amet iaculis dui. Etiam in mattis nunc. "
-                        />
-                    </div>
-                    
-                    <div className={styles.container} style={{bottom: bottom-100 + 'vh'}}>
-                    <GalleryItem 
-                        obraz={obraz2}
-                        title="NAZWA OBRAZA"
-                        desc="Nam pellentesque orci at felis pulvinar scelerisque. Sed suscipit enim faucibus lorem facilisis, vitae sollicitudin magna scelerisque. Suspendisse sit amet ipsum quis quam efficitur gravida quis eget lorem. Morbi pellentesque, ligula quis condimentum vehicula, tellus nulla semper sem, eget porta nisl neque et odio. "
-                        />
-                    </div> */}
 
                     {paintings.map((painting :typeof paintings, index:number) => <div className={styles.container} style={{bottom: bottom-(index*100) + 'vh'}}> <GalleryItem
                                     title={paintings[index].title} 
