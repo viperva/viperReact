@@ -2,7 +2,7 @@ import {useState, useEffect, KeyboardEvent} from 'react';
 import styles from './Gallery.module.css';
 import {CSSTransition} from 'react-transition-group';
 import title from '../../images2/tytul.gif'
-import reflektor from '../../images2/reflektor.png';
+import light from '../../images2/reflektor.png';
 import GalleryItem from './GalleryItem';
 
 import obraz from '../../images2/obraz1.png';
@@ -86,8 +86,8 @@ const Gallery = (props: any) =>{
                     <button onClick={downBottom} className={styles.previous}> &#8593; </button>
                     <button onClick={upBottom} className={styles.next}> &#8595; </button>
 
-                    <img className={styles.reflektor1} src={reflektor}/>
-                    <img className={styles.reflektor2} src={reflektor}/>
+                    <img className={styles.light1} src={light}/>
+                    <img className={styles.light2} src={light}/>
 
                     {/* <div className={styles.container} style={{bottom: bottom + 'vh'}}>
                     <GalleryItem 

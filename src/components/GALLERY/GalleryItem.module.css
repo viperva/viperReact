@@ -1,4 +1,4 @@
-.obraz{
+.painting{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -7,7 +7,7 @@
     z-index: 2;
 }
 
-.lancuchUp{
+.chainUp{
     position: absolute;
     left: 50%;
     top: 0;
@@ -17,7 +17,7 @@
     filter: brightness(70%);
 }
 
-.lancuchDown{
+.chainDown{
     position: absolute;
     left: 50%;
     bottom: 0;

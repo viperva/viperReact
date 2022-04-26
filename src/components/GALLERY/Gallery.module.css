@@ -46,7 +46,7 @@
     animation: hueRotate 0.5s linear infinite;
 }
 
-.reflektor1{
+.light1{
     position: absolute;
     right: 5vw;
     top: -5vw;
@@ -55,7 +55,7 @@
     transform:  scale(1, -1);
 }
 
-.reflektor2{
+.light2{
     position: absolute;
     left: 5vw;
     top: -5vw;
