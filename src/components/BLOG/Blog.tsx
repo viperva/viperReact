@@ -8,7 +8,7 @@ import art2img from '../../images2/obraz1.png';
 import bookFront from '../../images2/bookFront.png';
 import book from '../../images2/book.png';
 import bookBack from '../../images2/bookBack.png';
-
+//test
 type BlogProps = {
 
     blogHandler : boolean,
