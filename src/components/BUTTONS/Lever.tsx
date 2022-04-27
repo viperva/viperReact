@@ -3,12 +3,24 @@ import styles from './Lever.module.css';
 import leverUp from '../../images2/leverUp.png';
 import leverDown from '../../images2/leverDown.png';
 
-const Lever = (props: any) =>{
+type LeverProps = {
+
+    onClick : ()=> void,
+    isLeverUp : boolean
+
+}
+
+const Lever : React.FC<LeverProps> = ({
+
+    onClick,
+    isLeverUp
+
+}) =>{
 
     return(
-        <button className={styles.leverButton} onClick={props.onClick}>
+        <button className={styles.leverButton} onClick={onClick}>
             <img
-                src={props.isLeverUp ? leverUp : leverDown} 
+                src={isLeverUp ? leverUp : leverDown} 
                 className={styles.lever}
             />
         </button>

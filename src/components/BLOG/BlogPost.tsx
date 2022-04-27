@@ -1,17 +1,31 @@
 import styles from './BlogPost.module.css';
 
-const BlogPost = (props: any) =>{
+type BlogPostProps = {
+
+    image? : string | undefined,
+    title : string,
+    text : string
+
+}
+
+const BlogPost : React.FC<BlogPostProps> = ({
+
+    image,
+    title,
+    text
+
+}) =>{
 
     return(
         <>
-        {props.title != "" && <div className={styles.content}>
+        {title != "" && <div className={styles.content}>
             <div className={styles.left}>
-            <img className={styles.image} src={props.image}/>
+            <img className={styles.image} src={image}/>
             </div>
             <div className={styles.right}>
-                <h1 className={styles.title}>{props.title}</h1>
+                <h1 className={styles.title}>{title}</h1>
                 <p className={styles.text}>
-                    {props.text}
+                    {text}
                 </p>
             </div>
         </div>

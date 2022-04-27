@@ -7,7 +7,19 @@ import ben2 from '../../images2/ben2.png'
 import ben3 from '../../images2/ben3.png'
 import StoreItem from './StoreItem'
 
-const Store = (props: any) =>{
+type StoreProps = {
+
+    storeHandler : boolean,
+    toggleStore : ()=> void
+
+}
+
+const Store : React.FC<StoreProps> = ({
+
+    storeHandler,
+    toggleStore
+
+}) =>{
 
     const items: {[index: string]:any} = [
 
@@ -48,7 +60,7 @@ const Store = (props: any) =>{
 
     return(
         <CSSTransition
-        in={props.storeHandler}
+        in={storeHandler}
         mountOnEnter={true}
         unmountOnExit={true}
         onEnter={() => setLeft(0)}
@@ -65,12 +77,12 @@ const Store = (props: any) =>{
         }}>
             <div className={styles.store}>
                 <div className={styles.backdrop}></div>
-                <button onClick={props.toggleStore} className={styles.titleButton}>
+                <button onClick={toggleStore} className={styles.titleButton}>
                     <img className={styles.title} src={title} />
                 </button>
                 <button onClick={increaseLeft} className={styles.next}> &#8592; </button>
                 <button onClick={decreaseLeft} className={styles.previous}> &#8594; </button>
-                <button className={styles.button} onClick={props.toggleStore}>X</button>
+                <button className={styles.button} onClick={toggleStore}>X</button>
                 
                 {items.map((item :typeof items, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
                 img1={items[index].img1} 

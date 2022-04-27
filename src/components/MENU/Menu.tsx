@@ -15,7 +15,7 @@ import galleryPhoto from '../../images2/_gallery.png'
 
 import toBeReplaced from '../../images2/toBeReplaced.png'
 
-const Menu = () =>{
+const Menu : React.FC = () =>{
 
     const [lever, setLever] = useState(true);
 

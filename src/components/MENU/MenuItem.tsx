@@ -1,11 +1,24 @@
 import styles from './MenuItem.module.css';
 
-const MenuItem = (props: any) =>{
+type MenuItemProps = {
+
+    onClick? : ()=> void,
+    photo : string,
+    title : string
+}
+
+const MenuItem : React.FC<MenuItemProps> = ({
+
+    onClick,
+    photo,
+    title
+
+}) =>{
 
     return(
-        <button onClick={props.onClick} className={styles.menuItem}>
-                <img className={styles.menuItemPhoto}src={props.photo}/>
-                <h1 className={styles.menuItemTitle}>{props.title}</h1>
+        <button onClick={onClick} className={styles.menuItem}>
+                <img className={styles.menuItemPhoto}src={photo}/>
+                <h1 className={styles.menuItemTitle}>{title}</h1>
             </button>
     );
 

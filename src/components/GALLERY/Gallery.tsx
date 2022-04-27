@@ -10,7 +10,19 @@ import madonna from '../../images2/madonna.png';
 import chrystus from '../../images2/chrystus.png';
 import babel from '../../images2/babel.png';
 
-const Gallery = (props: any) =>{
+type GalleryProps = {
+
+    galleryHandler : boolean,
+    toggleGallery : ()=> void
+
+}
+
+const Gallery : React.FC<GalleryProps> = ({
+
+    galleryHandler,
+    toggleGallery
+
+}) =>{
 
     const paintings: {[index: string]:any} = [
 
@@ -48,6 +60,7 @@ const Gallery = (props: any) =>{
     const upBottom = () =>{
         if(bottom != (paintings.length-1)*100)
         setBottom(prevBottom => prevBottom + 100);
+        console.log(typeof madonna);
     }
 
     const downBottom = () =>{
@@ -58,7 +71,7 @@ const Gallery = (props: any) =>{
 
     return(
         <CSSTransition
-        in={props.galleryHandler}
+        in={galleryHandler}
         mountOnEnter={true}
         unmountOnExit={false}
         timeout={1000}
@@ -76,11 +89,11 @@ const Gallery = (props: any) =>{
                 <div className={styles.gallery}>
                     
                 <div className={styles.backdrop}></div>
-                    <button onClick={props.toggleGallery} className={styles.titleButton}>
+                    <button onClick={toggleGallery} className={styles.titleButton}>
                         <img className={styles.title} src={title} />
                     </button>
 
-                    <button className={styles.button} onClick={props.toggleGallery}>X</button>
+                    <button className={styles.button} onClick={toggleGallery}>X</button>
 
                     <button onClick={downBottom} className={styles.previous}> &#8593; </button>
                     <button onClick={upBottom} className={styles.next}> &#8595; </button>

@@ -9,13 +9,25 @@ import bookFront from '../../images2/bookFront.png';
 import book from '../../images2/book.png';
 import bookBack from '../../images2/bookBack.png';
 
-const Blog = (props: any) =>{
+type BlogProps = {
+
+    blogHandler : boolean,
+    toggleBlog : () => void
+
+}
+
+const Blog : React.FC<BlogProps> =({
+
+    blogHandler,
+    toggleBlog
+
+}) =>{
 
     const posts = [
         {
             title : "",
             text: "",
-            image: null
+            // image: null
         },
         {
             title : "TEST POST",
@@ -30,7 +42,7 @@ const Blog = (props: any) =>{
         {
             title : "",
             text: "",
-            image: null
+            // image: null
         }
     ]; 
 
@@ -56,7 +68,7 @@ const Blog = (props: any) =>{
 
     return(
         <CSSTransition
-        in={props.blogHandler}
+        in={blogHandler}
         mountOnEnter={true}
         unmountOnExit={false}
         timeout={1200}
@@ -74,11 +86,11 @@ const Blog = (props: any) =>{
         }}>
             <div className={styles.blog}>
             <div className={styles.backdrop}></div>
-                <button onClick={props.toggleBlog} className={styles.titleButton}>
+                <button onClick={toggleBlog} className={styles.titleButton}>
                     <img className={styles.title} src={title} />
                 </button>
 
-                <button className={styles.button} onClick={props.toggleBlog}>X</button>
+                <button className={styles.button} onClick={toggleBlog}>X</button>
                 <button className={styles.next} onClick={prevPost} > &#8592; </button>
                 <button className={styles.previous} onClick={nextPost} > &#8594; </button>
 

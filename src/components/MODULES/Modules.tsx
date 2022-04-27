@@ -3,13 +3,35 @@ import Blog from '../BLOG/Blog';
 import Gallery from '../GALLERY/Gallery';
 //import styles from './Modules.module.css';
 
-const Modules = (props: any) =>{
+type ModulesProps = {
+
+    storeHandler : boolean,
+    toggleStore : ()=> void,
+    
+    blogHandler : boolean,
+    toggleBlog : ()=> void,
+
+    galleryHandler : boolean,
+    toggleGallery : ()=> void,
+
+}
+
+const Modules : React.FC<ModulesProps> = ({
+
+    storeHandler,
+    toggleStore,
+    blogHandler,
+    toggleBlog,
+    galleryHandler,
+    toggleGallery,
+
+}) =>{
 
     return(
         <>
-        <Store storeHandler={props.storeHandler} toggleStore={props.toggleStore}/>
-        <Blog blogHandler={props.blogHandler} toggleBlog={props.toggleBlog}/>
-        <Gallery galleryHandler={props.galleryHandler} toggleGallery={props.toggleGallery}/>
+        <Store storeHandler={storeHandler} toggleStore={toggleStore}/>
+        <Blog blogHandler={blogHandler} toggleBlog={toggleBlog}/>
+        <Gallery galleryHandler={galleryHandler} toggleGallery={toggleGallery}/>
         </>
     );
 
