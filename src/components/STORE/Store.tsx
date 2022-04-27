@@ -14,6 +14,15 @@ type StoreProps = {
 
 }
 
+type item = {
+
+    title : string,
+    img1 : string,
+    img2 : string,
+    img3 : string
+
+}
+
 const Store : React.FC<StoreProps> = ({
 
     storeHandler,
@@ -21,7 +30,7 @@ const Store : React.FC<StoreProps> = ({
 
 }) =>{
 
-    const items: {[index: string]:any} = [
+    const items : item[] = [
 
         {
             title : "benio hoodie",
@@ -46,13 +55,13 @@ const Store : React.FC<StoreProps> = ({
 
     const [left, setLeft] = useState(0);
 
-    const increaseLeft = () =>{
+    const increaseLeft : ()=> void = () =>{
         if(left != 0){
             setLeft(prevLeft => prevLeft+100);
         }
     }
 
-    const decreaseLeft = () =>{
+    const decreaseLeft : ()=> void = () =>{
         if(left != (items.length-1)*(-100)){
             setLeft(prevLeft => prevLeft-100);
         }
@@ -84,7 +93,7 @@ const Store : React.FC<StoreProps> = ({
                 <button onClick={decreaseLeft} className={styles.previous}> &#8594; </button>
                 <button className={styles.button} onClick={toggleStore}>X</button>
                 
-                {items.map((item :typeof items, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
+                {items.map((item : item, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
                 img1={items[index].img1} 
                 img2={items[index].img2} 
                 img3={items[index].img3} 

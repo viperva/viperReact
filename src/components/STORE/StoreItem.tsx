@@ -1,22 +1,38 @@
 import styles from './StoreItem.module.css';
 
-const StoreItem = (props: any) =>{
+type StoreItemProps = {
+
+    title : string,
+    img1 : string,
+    img2 : string,
+    img3 : string
+
+}
+
+const StoreItem : React.FC<StoreItemProps> = ({
+
+    title,
+    img1,
+    img2,
+    img3
+
+}) =>{
 
     return(
             <>
-                <h1 className={styles.title}>{props.title}</h1>
+                <h1 className={styles.title}>{title}</h1>
                 <div className={styles.itemRow}>
 
                     <div className={styles.itemWrap}>
-                    <img className={styles.itemPhoto} src={props.img1}/>
+                    <img className={styles.itemPhoto} src={img1}/>
                     </div>
 
                     <div className={styles.itemWrap}>
-                    <img className={styles.itemPhoto} src={props.img2}/>
+                    <img className={styles.itemPhoto} src={img2}/>
                     </div>
 
                     <div className={styles.itemWrap}>
-                    <img className={styles.itemPhoto} src={props.img3}/>
+                    <img className={styles.itemPhoto} src={img3}/>
                     </div>
 
                 </div>

@@ -16,6 +16,14 @@ type BlogProps = {
 
 }
 
+type post = {
+
+    title? : string,
+    text? : string,
+    image? : string | undefined
+
+}
+
 const Blog : React.FC<BlogProps> =({
 
     blogHandler,
@@ -23,11 +31,9 @@ const Blog : React.FC<BlogProps> =({
 
 }) =>{
 
-    const posts = [
+    const posts : post[] = [
         {
-            title : "",
-            text: "",
-            // image: null
+            //front cover
         },
         {
             title : "TEST POST",
@@ -40,9 +46,7 @@ const Blog : React.FC<BlogProps> =({
             image: art2img
         },
         {
-            title : "",
-            text: "",
-            // image: null
+            //back cover
         }
     ]; 
 
@@ -50,7 +54,7 @@ const Blog : React.FC<BlogProps> =({
 
     const [bookImage, setBookImage] = useState(bookFront);
 
-    const nextPost = () =>{
+    const nextPost : ()=> void = () =>{
         if(postId<posts.length-1){
             setPostId(prevPostId => prevPostId+1);
             setBookImage(book);
@@ -58,7 +62,7 @@ const Blog : React.FC<BlogProps> =({
         }
     }
 
-    const prevPost = () =>{
+    const prevPost : ()=> void = () =>{
         if(postId>0){
             setPostId(prevPostId => prevPostId-1);
             setBookImage(book);

@@ -17,6 +17,14 @@ type GalleryProps = {
 
 }
 
+type painting = {
+
+    title : string,
+    img : string,
+    desc : string
+
+}
+
 const Gallery : React.FC<GalleryProps> = ({
 
     galleryHandler,
@@ -24,7 +32,7 @@ const Gallery : React.FC<GalleryProps> = ({
 
 }) =>{
 
-    const paintings: {[index: string]:any} = [
+    const paintings : painting[] = [
 
         {
             title : "babel",
@@ -39,7 +47,7 @@ const Gallery : React.FC<GalleryProps> = ({
         {
             title : "salvator mundi",
             img : chrystus,
-            desc : "Nam pellentesque orci at felis pulvinar scelerisque. Sed suscipit enim faucibus lorem facilisis, vitae sollicitudin magna scelerisque. Suspendisse sit amet ipsum quis quam efficitur gravida quis eget lorem. Morbi pellentesque, ligula quis condimentum vehicula, tellus nulla semper sem, eget porta nisl neque et odio. "
+            desc : "Nam pellentesque ori at felis pulvinar scelerisque. Sed suscipit enim faucibus lorem facilisis, vitae sollicitudin magna scelerisque. Suspendisse sit amet ipsum quis quam efficitur gravida quis eget lorem. Morbi pellentesque, ligula quis condimentum vehicula, tellus nulla semper sem, eget porta nisl neque et odio. "
         },
         {
             title : "tytul obrazu",
@@ -57,13 +65,13 @@ const Gallery : React.FC<GalleryProps> = ({
 
     const [bottom, setBottom] = useState(0);
 
-    const upBottom = () =>{
+    const upBottom : ()=> void = () =>{
         if(bottom != (paintings.length-1)*100)
         setBottom(prevBottom => prevBottom + 100);
         console.log(typeof madonna);
     }
 
-    const downBottom = () =>{
+    const downBottom : ()=> void = () =>{
         if(bottom != 0){
             setBottom(prevBottom => prevBottom - 100);
         }
@@ -101,7 +109,7 @@ const Gallery : React.FC<GalleryProps> = ({
                     <img className={styles.light1} src={light}/>
                     <img className={styles.light2} src={light}/>
 
-                    {paintings.map((painting :typeof paintings, index:number) => <div className={styles.container} style={{bottom: bottom-(index*100) + 'vh'}}> <GalleryItem
+                    {paintings.map((painting : painting, index:number) => <div className={styles.container} style={{bottom: bottom-(index*100) + 'vh'}}> <GalleryItem
                                     title={paintings[index].title} 
                                     img={paintings[index].img}
                                     desc={paintings[index].desc}

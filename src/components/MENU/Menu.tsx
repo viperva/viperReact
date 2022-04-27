@@ -18,30 +18,27 @@ import toBeReplaced from '../../images2/toBeReplaced.png'
 const Menu : React.FC = () =>{
 
     const [lever, setLever] = useState(true);
-
     const [store, setStore] = useState(false);
     const [blog, setBlog] = useState(false);
     const [gallery, setGallery] = useState(false);
 
-    let dynamicClass = 'visible';
-    let dynamicClass2 = 'hidden';
-    let dynamicClass3 = '0';
-    let dynamicClass4 = '100%';
+    let dynamicClass3 : string = '0';
+    let dynamicClass4 : string = '100%';
 
-    const toggleLever = () =>{
+    const toggleLever : ()=> void = () =>{
         setLever(!lever);
     }
 
-    const toggleStore = () =>{
+    const toggleStore : ()=> void = () =>{
         setStore(!store);
     }
 
-    const toggleBlog = () =>{
+    const toggleBlog : ()=> void = () =>{
         setBlog(!blog);
         console.log("toggleBlog")
     }
 
-    const toggleGallery = () =>{
+    const toggleGallery : ()=> void = () =>{
         setGallery(!gallery);
     }
 
