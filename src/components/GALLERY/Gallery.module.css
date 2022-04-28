@@ -223,34 +223,26 @@
 .next{
     position: absolute;
     right: 25vw;
-    top: 60%;
+    top: 45%;
     transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
-    color:goldenrod;
     z-index: 11;
+    width: 110px;
 
 }
 
 .previous{
     position: absolute;
-    right: 25vw;
-    top: 50%;
+    right: 24.5vw;
+    top: 60%;
     transform: translate(-50%, -50%);
+    transform: rotate(90deg);
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
-    color:goldenrod;
     z-index: 11;
-}
-
-.previous:hover{
-    animation: hueRotate 0.5s linear infinite;
-}
-
-.next:hover{
-    animation: hueRotate 0.5s linear infinite;
+    width: 110px;
 }

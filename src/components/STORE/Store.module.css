@@ -94,14 +94,14 @@
 
 .next{
     position: absolute;
+    transform: rotateY(180deg);
     left: 10%;
     top: 25%;
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
-    color:goldenrod;
     z-index: 11;
+    width: 120px;
 }
 .previous{
     position: absolute;
@@ -109,19 +109,10 @@
     transform: translate(-100%, 0);
     top: 25%;
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
-    color:goldenrod;
     z-index: 11;
-}
-
-.previous:hover{
-    animation: hueRotate 0.5s linear infinite;
-}
-
-.next:hover{
-    animation: hueRotate 0.5s linear infinite;
+    width: 120px;
 }
 
 .title{

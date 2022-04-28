@@ -8,6 +8,7 @@ import art2img from '../../images2/obraz1.png';
 import bookFront from '../../images2/bookFront.png';
 import book from '../../images2/book.png';
 import bookBack from '../../images2/bookBack.png';
+import arrow from '../../images2/arrow.png'
 //test
 type BlogProps = {
 
@@ -89,14 +90,19 @@ const Blog : React.FC<BlogProps> =({
         appearActive: styles.blogAppearActive
         }}>
             <div className={styles.blog}>
-            <div className={styles.backdrop}></div>
+            <div className={styles.backdrop}/>
                 <button onClick={toggleBlog} className={styles.titleButton}>
                     <img className={styles.title} src={title} />
                 </button>
 
                 <button className={styles.button} onClick={toggleBlog}>X</button>
-                <button className={styles.next} onClick={prevPost} > &#8592; </button>
-                <button className={styles.previous} onClick={nextPost} > &#8594; </button>
+
+                <button onClick={prevPost}> 
+                        <img className={styles.next} src={arrow}/>
+                    </button>
+                    <button onClick={nextPost}> 
+                        <img className={styles.previous} src={arrow}/>
+                    </button>
 
                 <img className={styles.book} src={bookImage}/>
                 

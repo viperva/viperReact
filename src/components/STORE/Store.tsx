@@ -6,6 +6,7 @@ import ben1 from '../../images2/ben1.png'
 import ben2 from '../../images2/ben2.png'
 import ben3 from '../../images2/ben3.png'
 import StoreItem from './StoreItem'
+import arrow from '../../images2/arrow.png'
 
 type StoreProps = {
 
@@ -53,17 +54,19 @@ const Store : React.FC<StoreProps> = ({
 
     ];
 
+    const pixelsToMove : number = 100;
+
     const [left, setLeft] = useState(0);
 
     const increaseLeft : ()=> void = () =>{
         if(left != 0){
-            setLeft(prevLeft => prevLeft+100);
+            setLeft(prevLeft => prevLeft + pixelsToMove);
         }
     }
 
     const decreaseLeft : ()=> void = () =>{
-        if(left != (items.length-1)*(-100)){
-            setLeft(prevLeft => prevLeft-100);
+        if(left != (items.length-1)*(-pixelsToMove)){
+            setLeft(prevLeft => prevLeft - pixelsToMove);
         }
     }
 
@@ -85,15 +88,19 @@ const Store : React.FC<StoreProps> = ({
         appearActive: styles.storeAppearActive
         }}>
             <div className={styles.store}>
-                <div className={styles.backdrop}></div>
+                <div className={styles.backdrop}/>
                 <button onClick={toggleStore} className={styles.titleButton}>
-                    <img className={styles.title} src={title} />
+                    <img className={styles.title} src={title}/>
                 </button>
-                <button onClick={increaseLeft} className={styles.next}> &#8592; </button>
-                <button onClick={decreaseLeft} className={styles.previous}> &#8594; </button>
+                <button onClick={increaseLeft}> 
+                <img className={styles.next} src={arrow}/>
+                </button>
+                <button onClick={decreaseLeft}> 
+                <img className={styles.previous} src={arrow}/>
+                </button>
                 <button className={styles.button} onClick={toggleStore}>X</button>
                 
-                {items.map((item : item, index:number) => <div className={styles.container} style={{left: left+(index*100) + 'vw'}}> <StoreItem
+                {items.map((item : item, index:number) => <div className={styles.container} style={{left: left+(index * pixelsToMove) + 'vw'}}> <StoreItem
                 img1={items[index].img1} 
                 img2={items[index].img2} 
                 img3={items[index].img3} 

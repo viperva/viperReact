@@ -19,9 +19,9 @@ const GalleryItem : React.FC<GalleryItemProps> = ({
 
     return(
         <>
-        <img className={styles.chainUp} src={chain}></img>
-        <img className={styles.chainDown} src={chain}></img>
-        <img className={styles.painting} src={img}></img>
+        <img className={styles.chainUp} src={chain}/>
+        <img className={styles.chainDown} src={chain}/>
+        <img className={styles.painting} src={img}/>
         <div className={styles.description}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.text}>{desc}</p>

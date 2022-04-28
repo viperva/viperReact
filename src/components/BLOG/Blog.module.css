@@ -172,14 +172,15 @@
 .next{
     position: absolute;
     left: 5%;
-    top: 50%;
+    top: 43%;
     transform: translate(-50%, -50%);
+    transform: rotate(180deg);
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
     color:goldenrod;
     z-index: 11;
+    width: 100px;;
 
 }
 .previous{
@@ -188,15 +189,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    font-size: 100px;
     border: none;
     background: none;
     color:goldenrod;
     z-index: 11;
-}
-.previous:hover{
-    animation: hueRotate 0.5s linear infinite;
-}
-.next:hover{
-    animation: hueRotate 0.5s linear infinite;
+    width: 100px;
 }

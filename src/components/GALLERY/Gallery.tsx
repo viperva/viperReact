@@ -9,6 +9,7 @@ import obraz2 from '../../images2/obraz2.png';
 import madonna from '../../images2/madonna.png';
 import chrystus from '../../images2/chrystus.png';
 import babel from '../../images2/babel.png';
+import arrow from '../../images2/arrow.png'
 
 type GalleryProps = {
 
@@ -63,17 +64,18 @@ const Gallery : React.FC<GalleryProps> = ({
 
     ]; 
 
+    const pixelsToMove : number = 100;
+
     const [bottom, setBottom] = useState(0);
 
     const upBottom : ()=> void = () =>{
-        if(bottom != (paintings.length-1)*100)
-        setBottom(prevBottom => prevBottom + 100);
-        console.log(typeof madonna);
+        if(bottom !== (paintings.length-1) * pixelsToMove)
+        setBottom(prevBottom => prevBottom + pixelsToMove);
     }
 
     const downBottom : ()=> void = () =>{
-        if(bottom != 0){
-            setBottom(prevBottom => prevBottom - 100);
+        if(bottom !== 0){
+            setBottom(prevBottom => prevBottom - pixelsToMove);
         }
     }
 
@@ -96,20 +98,24 @@ const Gallery : React.FC<GalleryProps> = ({
             
                 <div className={styles.gallery}>
                     
-                <div className={styles.backdrop}></div>
+                <div className={styles.backdrop}/>
                     <button onClick={toggleGallery} className={styles.titleButton}>
-                        <img className={styles.title} src={title} />
+                        <img className={styles.title} src={title}/>
                     </button>
 
                     <button className={styles.button} onClick={toggleGallery}>X</button>
 
-                    <button onClick={downBottom} className={styles.previous}> &#8593; </button>
-                    <button onClick={upBottom} className={styles.next}> &#8595; </button>
+                    <button onClick={downBottom}> 
+                        <img className={styles.next} src={arrow}/>
+                    </button>
+                    <button onClick={upBottom}> 
+                        <img className={styles.previous} src={arrow}/>
+                    </button>
 
                     <img className={styles.light1} src={light}/>
                     <img className={styles.light2} src={light}/>
 
-                    {paintings.map((painting : painting, index:number) => <div className={styles.container} style={{bottom: bottom-(index*100) + 'vh'}}> <GalleryItem
+                    {paintings.map((painting : painting, index:number) => <div className={styles.container} style={{bottom: bottom-(index * pixelsToMove) + 'vh'}}> <GalleryItem
                                     title={paintings[index].title} 
                                     img={paintings[index].img}
                                     desc={paintings[index].desc}
