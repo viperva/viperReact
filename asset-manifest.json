@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.8976bee0.css",
+    "main.js": "/react-gh-pages/static/js/main.9e6b1993.js",
+    "static/js/787.c129420a.chunk.js": "/react-gh-pages/static/js/787.c129420a.chunk.js",
+    "static/media/toBeReplaced.png": "/react-gh-pages/static/media/toBeReplaced.1e81b31e736e3a9ed2ad.png",
+    "static/media/book.png": "/react-gh-pages/static/media/book.9331a1b0578f84cc6843.png",
+    "static/media/viper2.png": "/react-gh-pages/static/media/viper2.cdd1d55bb500f098b424.png",
+    "static/media/madonna.png": "/react-gh-pages/static/media/madonna.aefe38bacce331a18942.png",
+    "static/media/babel.png": "/react-gh-pages/static/media/babel.ecb0019ad25b9c3f39b4.png",
+    "static/media/obraz2.png": "/react-gh-pages/static/media/obraz2.5f24e9ac4023afbba902.png",
+    "static/media/obraz1.png": "/react-gh-pages/static/media/obraz1.5aa75877732a5862bef5.png",
+    "static/media/bookFront.png": "/react-gh-pages/static/media/bookFront.a2ba26f7e9b76fbb098a.png",
+    "static/media/chrystus.png": "/react-gh-pages/static/media/chrystus.58879fa2d14872849bc9.png",
+    "static/media/aboutPhoto.png": "/react-gh-pages/static/media/aboutPhoto.39f09883f5d21761db91.png",
+    "static/media/contactPhoto.png": "/react-gh-pages/static/media/contactPhoto.08a2df55c156b1d9a71f.png",
+    "static/media/bookBack.png": "/react-gh-pages/static/media/bookBack.5444e33c5219eb1c5128.png",
+    "static/media/reflektor.png": "/react-gh-pages/static/media/reflektor.9282b8fb840885d766bd.png",
+    "static/media/ben3.png": "/react-gh-pages/static/media/ben3.229ff0ab37f2156a3240.png",
+    "static/media/tlo5.jpg": "/react-gh-pages/static/media/tlo5.df2074c266b81db01414.jpg",
+    "static/media/ben2.png": "/react-gh-pages/static/media/ben2.2c30e0412654b13c9ed9.png",
+    "static/media/ben1.png": "/react-gh-pages/static/media/ben1.b24540f9bd7f4fb76753.png",
+    "static/media/_portfolio.png": "/react-gh-pages/static/media/_portfolio.7a4651e13605f130516b.png",
+    "static/media/_blog.png": "/react-gh-pages/static/media/_blog.b8ed33b02e8fa86809b1.png",
+    "static/media/_gallery.png": "/react-gh-pages/static/media/_gallery.5d317b1508d75501e0b6.png",
+    "static/media/_store.png": "/react-gh-pages/static/media/_store.c66f64b9c85e9753ee68.png",
+    "static/media/lancuch.png": "/react-gh-pages/static/media/lancuch.9872732bce635c70d6b1.png",
+    "static/media/arrow.png": "/react-gh-pages/static/media/arrow.d956f2cf5176f8e6371e.png",
+    "static/media/tytul.gif": "/react-gh-pages/static/media/tytul.12f99d05b0f1dae704b2.gif",
+    "static/media/leverDown.png": "/react-gh-pages/static/media/leverDown.96b0a01472d13146b8c0.png",
+    "static/media/leverUp.png": "/react-gh-pages/static/media/leverUp.5bf47148b60a902a6db5.png",
+    "static/media/Myfont2.ttf": "/react-gh-pages/static/media/Myfont2.9fe01283088b0315bd8c.ttf",
+    "index.html": "/react-gh-pages/index.html",
+    "main.8976bee0.css.map": "/react-gh-pages/static/css/main.8976bee0.css.map",
+    "main.9e6b1993.js.map": "/react-gh-pages/static/js/main.9e6b1993.js.map",
+    "787.c129420a.chunk.js.map": "/react-gh-pages/static/js/787.c129420a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8976bee0.css",
+    "static/js/main.9e6b1993.js"
+  ]
+}
