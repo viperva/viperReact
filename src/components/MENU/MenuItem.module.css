@@ -25,7 +25,14 @@
     transition: 0.05s linear;
     background: none;
     border: none;
-  }
+}
+
+@media (max-width: 991px){
+    .menuItem{
+        padding: 0;
+        width: 50%;
+    }
+}
 
   .menuItem:hover{
     flex-grow: 0.65;
