@@ -6,7 +6,7 @@ import postnote from "../../images2/postnote-t.png";
 type BlogPostProps = {
   image?: string | undefined;
   title?: string;
-  text?: string;
+  text?: string | JSX.Element;
 };
 
 const BlogPost: React.FC<BlogPostProps> = ({ image, title, text }) => {

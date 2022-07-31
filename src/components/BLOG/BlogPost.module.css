@@ -62,7 +62,7 @@
     }
 
     .content{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .left{
@@ -71,6 +71,7 @@
     }
 
     .right{
+        margin-top: 1rem;
         width: 90%;
         transform: translate(5%);
     }

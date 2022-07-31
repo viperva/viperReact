@@ -23,7 +23,7 @@ type BlogProps = {
 
 type post = {
   title?: string;
-  text?: string;
+  text?: string | JSX.Element;
   image?: string | undefined;
 };
 
@@ -31,7 +31,7 @@ const Blog: React.FC<BlogProps> = ({ blogHandler, toggleBlog }) => {
   const posts: post[] = [
     {
       title: "TEST POST",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique bibendum massa sit amet euismod. Cras nec sapien gravida, bibendum nisl eget, sodales sem. Mauris nec interdum dolor. Donec ac rhoncus arcu. Sed ac varius tortor. Phasellus ornare sapien id libero rutrum, sed volutpat massa tristique. Integer gravida est sed sem sagittis, a faucibus lacus iaculis. Phasellus eros ante, ultrices id mi non, vehicula pulvinar ipsum. Nam quis dui non velit aliquam ornare. Nunc imperdiet egestas odio, sed malesuada tortor ullamcorper tempus. Aliquam mollis tellus nibh, eu elementum mauris malesuada id. ",
+      text: <a href="/">sdsds</a>,
       image: art1img,
     },
     {
