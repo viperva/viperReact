@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/viperReact/static/css/main.99abb28c.css",
-    "main.js": "/viperReact/static/js/main.02a1bb38.js",
+    "main.js": "/viperReact/static/js/main.3db1ddad.js",
     "static/js/787.c129420a.chunk.js": "/viperReact/static/js/787.c129420a.chunk.js",
     "static/media/toBeReplaced.png": "/viperReact/static/media/toBeReplaced.1e81b31e736e3a9ed2ad.png",
     "static/media/book.png": "/viperReact/static/media/book.9331a1b0578f84cc6843.png",
@@ -20,25 +20,25 @@
     "static/media/tlo5.jpg": "/viperReact/static/media/tlo5.df2074c266b81db01414.jpg",
     "static/media/ben2.png": "/viperReact/static/media/ben2.2c30e0412654b13c9ed9.png",
     "static/media/ben1.png": "/viperReact/static/media/ben1.b24540f9bd7f4fb76753.png",
-    "static/media/_portfolio.png": "/viperReact/static/media/_portfolio.7a4651e13605f130516b.png",
-    "static/media/_blog.png": "/viperReact/static/media/_blog.b8ed33b02e8fa86809b1.png",
-    "static/media/_gallery.png": "/viperReact/static/media/_gallery.5d317b1508d75501e0b6.png",
-    "static/media/_store.png": "/viperReact/static/media/_store.c66f64b9c85e9753ee68.png",
     "static/media/lancuch.png": "/viperReact/static/media/lancuch.9872732bce635c70d6b1.png",
     "static/media/arrow.png": "/viperReact/static/media/arrow.d956f2cf5176f8e6371e.png",
+    "static/media/portfolio-t.png": "/viperReact/static/media/portfolio-t.ac909632a17061a2445b.png",
     "static/media/tytul.gif": "/viperReact/static/media/tytul.12f99d05b0f1dae704b2.gif",
+    "static/media/blog-t.png": "/viperReact/static/media/blog-t.f004f42224f216131ee7.png",
+    "static/media/gallery-t.png": "/viperReact/static/media/gallery-t.2d39bb44f6445dfb3712.png",
     "static/media/leverDown.png": "/viperReact/static/media/leverDown.96b0a01472d13146b8c0.png",
     "static/media/leverUp.png": "/viperReact/static/media/leverUp.5bf47148b60a902a6db5.png",
+    "static/media/store-t.png": "/viperReact/static/media/store-t.e72bdc24567aa3e25440.png",
     "static/media/postnote-t.png": "/viperReact/static/media/postnote-t.44aee48af3bf597959dd.png",
     "static/media/sign-t.png": "/viperReact/static/media/sign-t.e1f4c3d3ae483275bc04.png",
     "static/media/Myfont2.ttf": "/viperReact/static/media/Myfont2.9fe01283088b0315bd8c.ttf",
     "index.html": "/viperReact/index.html",
     "main.99abb28c.css.map": "/viperReact/static/css/main.99abb28c.css.map",
-    "main.02a1bb38.js.map": "/viperReact/static/js/main.02a1bb38.js.map",
+    "main.3db1ddad.js.map": "/viperReact/static/js/main.3db1ddad.js.map",
     "787.c129420a.chunk.js.map": "/viperReact/static/js/787.c129420a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99abb28c.css",
-    "static/js/main.02a1bb38.js"
+    "static/js/main.3db1ddad.js"
   ]
 }
