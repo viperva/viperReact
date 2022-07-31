@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-import blogPhoto from "../../images2/_blog.png";
-import galleryPhoto from "../../images2/_gallery.png";
-import portfolioPhoto from "../../images2/_portfolio.png";
-import storePhoto from "../../images2/_store.png";
+import blogPhoto from "../../images2/blog-t.png";
+import galleryPhoto from "../../images2/gallery-t.png";
+import portfolioPhoto from "../../images2/portfolio-t.png";
+import storePhoto from "../../images2/store-t.png";
 import aboutPhoto from "../../images2/aboutPhoto.png";
 import contactPhoto from "../../images2/contact.png";
 import toBeReplaced from "../../images2/toBeReplaced.png";
