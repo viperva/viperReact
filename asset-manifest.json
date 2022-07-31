@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/viperReact/static/css/main.5bd3b587.css",
-    "main.js": "/viperReact/static/js/main.da8051cc.js",
+    "main.css": "/viperReact/static/css/main.99abb28c.css",
+    "main.js": "/viperReact/static/js/main.02a1bb38.js",
     "static/js/787.c129420a.chunk.js": "/viperReact/static/js/787.c129420a.chunk.js",
     "static/media/toBeReplaced.png": "/viperReact/static/media/toBeReplaced.1e81b31e736e3a9ed2ad.png",
     "static/media/book.png": "/viperReact/static/media/book.9331a1b0578f84cc6843.png",
@@ -13,6 +13,7 @@
     "static/media/bookFront.png": "/viperReact/static/media/bookFront.a2ba26f7e9b76fbb098a.png",
     "static/media/chrystus.png": "/viperReact/static/media/chrystus.58879fa2d14872849bc9.png",
     "static/media/aboutPhoto.png": "/viperReact/static/media/aboutPhoto.39f09883f5d21761db91.png",
+    "static/media/contact.png": "/viperReact/static/media/contact.08a2df55c156b1d9a71f.png",
     "static/media/bookBack.png": "/viperReact/static/media/bookBack.5444e33c5219eb1c5128.png",
     "static/media/reflektor.png": "/viperReact/static/media/reflektor.9282b8fb840885d766bd.png",
     "static/media/ben3.png": "/viperReact/static/media/ben3.229ff0ab37f2156a3240.png",
@@ -24,19 +25,20 @@
     "static/media/_gallery.png": "/viperReact/static/media/_gallery.5d317b1508d75501e0b6.png",
     "static/media/_store.png": "/viperReact/static/media/_store.c66f64b9c85e9753ee68.png",
     "static/media/lancuch.png": "/viperReact/static/media/lancuch.9872732bce635c70d6b1.png",
-    "static/media/contactPhoto.png": "/viperReact/static/media/contactPhoto.eabcfd693947dfeb52a0.png",
     "static/media/arrow.png": "/viperReact/static/media/arrow.d956f2cf5176f8e6371e.png",
     "static/media/tytul.gif": "/viperReact/static/media/tytul.12f99d05b0f1dae704b2.gif",
     "static/media/leverDown.png": "/viperReact/static/media/leverDown.96b0a01472d13146b8c0.png",
     "static/media/leverUp.png": "/viperReact/static/media/leverUp.5bf47148b60a902a6db5.png",
+    "static/media/postnote-t.png": "/viperReact/static/media/postnote-t.44aee48af3bf597959dd.png",
+    "static/media/sign-t.png": "/viperReact/static/media/sign-t.e1f4c3d3ae483275bc04.png",
     "static/media/Myfont2.ttf": "/viperReact/static/media/Myfont2.9fe01283088b0315bd8c.ttf",
     "index.html": "/viperReact/index.html",
-    "main.5bd3b587.css.map": "/viperReact/static/css/main.5bd3b587.css.map",
-    "main.da8051cc.js.map": "/viperReact/static/js/main.da8051cc.js.map",
+    "main.99abb28c.css.map": "/viperReact/static/css/main.99abb28c.css.map",
+    "main.02a1bb38.js.map": "/viperReact/static/js/main.02a1bb38.js.map",
     "787.c129420a.chunk.js.map": "/viperReact/static/js/787.c129420a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bd3b587.css",
-    "static/js/main.da8051cc.js"
+    "static/css/main.99abb28c.css",
+    "static/js/main.02a1bb38.js"
   ]
 }
