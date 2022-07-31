@@ -2,24 +2,33 @@
 .post{
     position: absolute;
     left: 50%;
-    overflow: hidden;
-    transform: translate(-50%, 60%);
+    top: 50%;
+    /* overflow: hidden; */
+    transform: translate(-50%, -35%);
     /* border: 2px solid white; */
-    bottom: 50%;
-    width: 80vw;
-    height:auto;
-    /* background-image: url('../../images2/book.png'); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: 75vw;
+    height: 70vh;
 }
 
-.book{
+.items{
     position: absolute;
+    top: 15vh;
     height: 85vh;
-    left: 50%;
-    transform: translate(-50%, 18%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    overflow: scroll;
 }
+
+.items::after{
+    content: "x\00000ad\00000ad\00000ad";
+    display: block;
+    visibility: hidden;
+    height: 200px;
+    width: 20px;
+  }
 
 .blog{
     position: absolute;
@@ -95,8 +104,6 @@
     opacity: 0;
 }
 
-
-
 @keyframes bounce-in {
     0%{bottom : 100vh}
     40%{bottom : 0}
@@ -147,6 +154,14 @@
     border: none;
 }
 
+@media (orientation: portrait) {
+    .titleButton{
+        height: 15vh;
+        background-color: rgb(0, 0, 0, 0.6);
+        width: 100%;
+    }
+}
+
 .title:hover{
     animation: hueRotate 0.5s linear infinite;
 }
@@ -171,7 +186,7 @@
 
 .next{
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: 43%;
     transform: translate(-50%, -50%);
     transform: rotate(180deg);

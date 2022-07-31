@@ -1,23 +1,21 @@
 .content{
     display: flex;
     flex-direction: row;
-    padding: 8%;
-    gap: 13%;
-    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid white; */
+    /* align-items: center; */
 }
 
 .left{
     width: 50%;
-    opacity: 90%;
+    /* opacity: 90%; */
 }
 
 .right{
     width: 50%;
-    height: 50vh;
-    opacity: 85%;
-    text-align: center;
-    overflow: scroll;
-    scrollbar-width: none;
+    /* border: 2px solid red; */
+    /* background-image: url('../../images2/postnote-t.png'); */
+    /* background-repeat: no-repeat; */
 }
 
 .right::-webkit-scrollbar { 
@@ -25,19 +23,65 @@
 }
 
 .title{
+    position: absolute;
+    top: 20px;
+    /* left: 50%; */
+    width: 50%;
+    text-align: center;
     font-family: viper-font;
-    font-size: 6vh;
+    font-size: 3vw;
     margin-top: -0.2vh;
 }
 
 .text{
-    font-size: 2.5vh;
+    position: absolute;
+    /* border: 2px solid green; */
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    top: 6vw;
+    transform: translate(10%);
+    width: 40%;
+    height: 19vw;
+    font-size: 1.5vw;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
 }
 
+@media (orientation: portrait) {
+    .text{
+        width: 80%;
+        top: 15vw;
+        font-size: 3.5vw;
+        height: 65%;
+    }
+
+    .title{
+        width: 99%;
+        font-size: 6vw;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 94%;
+        transform: translate(6%);
+    }
+
+    .right{
+        width: 90%;
+        transform: translate(5%);
+    }
+}
 
 .image{
+    width: 90%;
+}
+
+
+.postnote{
     width: 100%;
 }
 
