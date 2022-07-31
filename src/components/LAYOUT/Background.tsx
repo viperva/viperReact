@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styles from "./Layout.module.css";
 
@@ -15,9 +16,9 @@ const Background: React.FC<BackgroundProps> = ({
   return (
     <div
       className={styles.background}
-      style={{
-        filter: `hue-rotate(${hue}deg) grayscale(${grayscale}%) brightness(${brightness}%)`,
-      }}
+      {...(hue && { style: { filter: `hue-rotate(${hue}deg)` } })}
+      {...(grayscale && { style: { filter: `grayscale(${grayscale}%)` } })}
+      {...(brightness && { style: { filter: `brightness(${brightness}%)` } })}
     ></div>
   );
 };
