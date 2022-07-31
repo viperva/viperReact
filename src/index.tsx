@@ -9,7 +9,7 @@ import Menu from "./components/MENU/Menu";
 
 ReactDOM.render(
   <React.Fragment>
-    <Background />
+    <Background hue={0} />
     <Title />
     <Menu />
     <Footer />

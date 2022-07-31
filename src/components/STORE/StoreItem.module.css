@@ -6,9 +6,11 @@
     height: 80%;
 }
 
+
 .itemWrap{
     width: 27vw;
 }
+
 
 .itemPhoto{
     width: 100%;
@@ -21,6 +23,18 @@
     font-size: 55px;
     font-family: viper-font;
     color: goldenrod;
+}
+
+@media (orientation: portrait) {
+    .itemRow{
+        flex-direction: column;
+    }
+    .itemWrap{
+        width: 100vw;
+    }
+    .title{
+        font-size: 35px;
+    }
 }
 
 .title:hover{

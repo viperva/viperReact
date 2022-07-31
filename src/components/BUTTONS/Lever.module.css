@@ -1,14 +1,13 @@
 .lever{
-    height: 110%;
-    width: 110%;
+    width: 100%;
 }
 
 .leverButton{
     position: absolute;
     left: 2vw;
     top: 6vh;
-    width: 12vw;
-    height: 12vw;
+    width: 15%;
+    max-width: 30vh;
     background: none;
     border: none;
     cursor: grab;
