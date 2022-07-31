@@ -75,7 +75,7 @@ const Gallery: React.FC<GalleryProps> = ({ galleryHandler, toggleGallery }) => {
     <CSSTransition
       in={galleryHandler}
       mountOnEnter={true}
-      unmountOnExit={false}
+      unmountOnExit={true}
       timeout={1000}
       classNames={{
         enter: styles.galleryEnter,

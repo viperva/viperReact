@@ -83,7 +83,7 @@ const Store: React.FC<StoreProps> = ({ storeHandler, toggleStore }) => {
       }}
     >
       <div className={styles.store}>
-        <Background hue={72} />
+        <Background hue={72} brightness={100} grayscale={0} />
         <button onClick={toggleStore} className={styles.titleButton}>
           <img className={styles.title} src={title} />
         </button>

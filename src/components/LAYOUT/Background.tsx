@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Layout.module.css";
 
 type BackgroundProps = {
-  hue?: number;
-  grayscale?: number;
-  brightness?: number;
+  hue: number;
+  grayscale: number;
+  brightness: number;
 };
 
 const Background: React.FC<BackgroundProps> = ({

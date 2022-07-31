@@ -70,7 +70,7 @@ const Blog: React.FC<BlogProps> = ({ blogHandler, toggleBlog }) => {
     <CSSTransition
       in={blogHandler}
       mountOnEnter={true}
-      unmountOnExit={false}
+      unmountOnExit={true}
       timeout={1200}
       onExited={() => setPostId(0)}
       onEnter={() => setBookImage(bookFront)}
@@ -86,7 +86,7 @@ const Blog: React.FC<BlogProps> = ({ blogHandler, toggleBlog }) => {
       }}
     >
       <div className={styles.blog}>
-        <Background hue={232} />
+        <Background hue={232} grayscale={0} brightness={100} />
         <button onClick={toggleBlog} className={styles.titleButton}>
           <img className={styles.title} src={title} />
         </button>
