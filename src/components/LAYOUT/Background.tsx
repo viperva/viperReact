@@ -16,9 +16,9 @@ const Background: React.FC<BackgroundProps> = ({
   return (
     <div
       className={styles.background}
-      {...(hue && { style: { filter: `hue-rotate(${hue}deg)` } })}
-      {...(grayscale && { style: { filter: `grayscale(${grayscale}%)` } })}
-      {...(brightness && { style: { filter: `brightness(${brightness}%)` } })}
+      style={{
+        filter: `hue-rotate(${hue}deg) grayscale(${grayscale}%) brightness(${brightness}%)`,
+      }}
     ></div>
   );
 };
