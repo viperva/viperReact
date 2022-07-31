@@ -2,14 +2,22 @@ import React from "react";
 import styles from "./Layout.module.css";
 
 type BackgroundProps = {
-  hue: number;
+  hue?: number;
+  grayscale?: number;
+  brightness?: number;
 };
 
-const Background: React.FC<BackgroundProps> = ({ hue }) => {
+const Background: React.FC<BackgroundProps> = ({
+  hue,
+  grayscale,
+  brightness,
+}) => {
   return (
     <div
       className={styles.background}
-      style={{ filter: `hue-rotate(${hue}deg)` }}
+      style={{
+        filter: `hue-rotate(${hue}deg) grayscale(${grayscale}%) brightness(${brightness}%)`,
+      }}
     ></div>
   );
 };

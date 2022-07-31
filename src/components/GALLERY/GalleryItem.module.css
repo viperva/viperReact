@@ -7,6 +7,11 @@
     z-index: 2;
 }
 
+.item{
+    position: relative;
+    height: 85vh;
+}
+
 .chainUp{
     position: absolute;
     left: 50%;
@@ -27,6 +32,7 @@
     filter: brightness(70%);
 }
 
+
 .description{
     position: absolute;
     display: flex;
@@ -37,6 +43,16 @@
     height: 40vh;
     background-color: rgba(0, 0, 0, 0.384);
     border-radius: 10%;
+}
+
+.sign{
+    position: absolute;
+    left: 50%;
+    bottom: 13vh;
+    width: 60vw;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    filter: sepia(100%);
 }
 
 .title{
@@ -58,4 +74,31 @@
 
 .text::-webkit-scrollbar { 
     display: none;
+}
+
+@media (orientation: portrait){
+    .painting{
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        height: 55vh;
+    }
+    .chainUp{
+        width: 30vh;
+    }
+    .chainDown{
+        width: 30vh;
+    }
+    .title{
+        position: absolute;
+        bottom: 17vh;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 3;
+        font-family: viper-font;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
 }

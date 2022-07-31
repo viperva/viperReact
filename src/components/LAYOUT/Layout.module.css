@@ -26,6 +26,7 @@
     cursor: wait;
     border: none;
 }
+
 @media (orientation: portrait) {
     .header{
         height: 15vh;
@@ -53,4 +54,5 @@
     left: 50%;
     transform: translate(-50%, 0);
     bottom: 10px;
+    z-index: 100;
 }
