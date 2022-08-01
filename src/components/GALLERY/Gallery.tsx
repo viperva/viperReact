@@ -99,11 +99,11 @@ const Gallery: React.FC<GalleryProps> = ({ galleryHandler, toggleGallery }) => {
             <button className={styles.button} onClick={toggleGallery}>
               X
             </button>
-            <button onClick={downBottom}>
-              <img className={styles.next} src={arrow} />
+            <button className={styles.next} onClick={downBottom}>
+              <img style={{ width: "100%" }} src={arrow} />
             </button>
-            <button onClick={upBottom}>
-              <img className={styles.previous} src={arrow} />
+            <button className={styles.previous} onClick={upBottom}>
+              <img style={{ width: "100%" }} src={arrow} />
             </button>
           </>
         )}

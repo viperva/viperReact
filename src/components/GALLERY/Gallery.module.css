@@ -199,16 +199,17 @@
     z-index: 15;
 }
 
-.titleBackground{
-    position: absolute;
-    width: 100vw;
-    height: 15vh;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-}
 
 @media (orientation: portrait){
+    .titleBackground{
+        position: absolute;
+        width: 100vw;
+        height: 15vh;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+    }
+    
     .titleButton{
         position: absolute;
         z-index: 10;

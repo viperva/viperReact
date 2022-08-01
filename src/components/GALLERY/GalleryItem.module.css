@@ -3,13 +3,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -40%);
-    height: 60vh;
+    width: 35vw;
     z-index: 2;
 }
 
 .item{
     position: relative;
-    height: 85vh;
+    height: 100vh;
 }
 
 .chainUp{
@@ -48,7 +48,7 @@
 .sign{
     position: absolute;
     left: 50%;
-    bottom: 13vh;
+    top: 61vh;
     width: 60vw;
     transform: translate(-50%, 0);
     z-index: 2;
@@ -80,25 +80,29 @@
     .painting{
         position: absolute;
         left: 50%;
-        top: 35%;
+        top: 40%;
         transform: translate(-50%, -50%);
-        height: 55vh;
+        width: 85vw;
     }
     .chainUp{
-        width: 30vh;
+        width: 35vh;
     }
     .chainDown{
-        width: 30vh;
+        width: 35vh;
     }
     .title{
         position: absolute;
-        bottom: 17vh;
+        top: 65vh;
         left: 50%;
         transform: translate(-50%);
         z-index: 3;
         font-family: viper-font;
-        font-size: 20px;
+        font-size: 5vw;
         text-align: center;
         color: black;
+    }
+    .item{
+        height: 85vh;
+
     }
 }
