@@ -21,6 +21,7 @@ const Menu: React.FC = () => {
   const [store, setStore] = useState(false);
   const [blog, setBlog] = useState(false);
   const [gallery, setGallery] = useState(false);
+  const [contact, setContact] = useState(false);
   const isMobile = useMediaQuery({ query: "(orientation: portrait)" });
 
   let dynamicClass3: string = "0";
@@ -36,11 +37,14 @@ const Menu: React.FC = () => {
 
   const toggleBlog: () => void = () => {
     setBlog(!blog);
-    console.log("toggleBlog");
   };
 
   const toggleGallery: () => void = () => {
     setGallery(!gallery);
+  };
+
+  const toggleContact: () => void = () => {
+    setContact(!contact);
   };
 
   !lever && (dynamicClass3 = "-100%");
@@ -57,6 +61,8 @@ const Menu: React.FC = () => {
         toggleBlog={toggleBlog}
         galleryHandler={gallery}
         toggleGallery={toggleGallery}
+        contactHandler={contact}
+        toggleContact={toggleContact}
       />
 
       {isMobile && (
@@ -71,7 +77,11 @@ const Menu: React.FC = () => {
             title="GALLERY"
           />
 
-          <MenuItem photo={contactPhoto} title="CONTACT" />
+          <MenuItem
+            photo={contactPhoto}
+            onClick={toggleContact}
+            title="CONTACT"
+          />
 
           <MenuItem photo={aboutPhoto} title="ABOUT ME" />
 
@@ -100,7 +110,11 @@ const Menu: React.FC = () => {
               title="GALLERY"
             />
 
-            <MenuItem photo={contactPhoto} title="CONTACT" />
+            <MenuItem
+              photo={contactPhoto}
+              onClick={toggleContact}
+              title="CONTACT"
+            />
           </div>
 
           <div
